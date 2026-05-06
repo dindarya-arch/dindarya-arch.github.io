@@ -2,55 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dindarya-arch.github.io/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/index.html</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://dindarya-arch.github.io/bibliography.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/author-profile.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://dindarya-arch.github.io/author-profile_FR.html</loc>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/author-profile-en.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://dindarya-arch.github.io/author-profile_EN.html</loc>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dindarya-arch.github.io/papers/tel-dan-antigonos-37-bce.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-psalms-solomon.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-antigonos-37-bce-fr-final.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-demsky-1995-en-final.html</loc>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-koine-back-translation.html</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-demsky-1995.html</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-demsky-1995-final.html</loc>
+    <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
