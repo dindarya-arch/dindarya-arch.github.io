@@ -44,6 +44,24 @@
     }
 
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem 6rem; }
+    .site-logo {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      width: 86px;
+      height: auto;
+      z-index: 20;
+    }
+
+    @media (max-width: 900px) {
+      .site-logo {
+        position: static;
+        display: block;
+        width: 82px;
+        margin: 1rem 0 0 1.2rem;
+      }
+    }
+
 
     nav { padding: 2rem 0 1rem; font-size: 10pt; text-align: left; }
     nav a { color: #000; text-decoration: underline; }
@@ -166,6 +184,7 @@
   </style>
 </head>
 <body>
+<img class="site-logo" src="../Logo.jpg" alt="École Celtique — Sagesse et Héritage">
 <div class="wrap">
 
   <nav>← <a href="../index.html">Accueil</a> &nbsp;/&nbsp; <a href="../bibliography.html">Bibliographie</a></nav>

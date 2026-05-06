@@ -43,6 +43,28 @@
       text-align: justify;
     }
 
+    .site-logo {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      width: 86px;
+      height: auto;
+      z-index: 10;
+    }
+
+    @media (max-width: 900px) {
+      .site-logo {
+        position: static;
+        display: block;
+        width: 78px;
+        margin: 1rem 0 0 1.2rem;
+      }
+    }
+
+    @media print {
+      .site-logo { display: none; }
+    }
+
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem 6rem; }
 
     nav { padding: 2rem 0 1rem; font-size: 10pt; text-align: left; }
@@ -166,6 +188,9 @@
   </style>
 </head>
 <body>
+  <a href="../index.html" aria-label="Home">
+    <img class="site-logo" src="../Logo.jpg" alt="Celtic School — Wisdom and Heritage">
+  </a>
 <div class="wrap">
 
   <nav>← <a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../bibliography.html">Bibliography</a></nav>
