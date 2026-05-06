@@ -25,25 +25,49 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-antigonos-37-bce.html</loc>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-boundary_EN.html</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-antigonos-37-bce-fr-final.html</loc>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-boundary_FR.html</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-demsky-1995-en-final.html</loc>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-demky_EN.html</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://dindarya-arch.github.io/papers/tel-dan-demsky-1995-final.html</loc>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-demsky_FR.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/TelDan_PsSolomon_EN.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/TelDan_PsSalomon_FR.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-koine_EN.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-koine_FR.html</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
