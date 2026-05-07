@@ -209,6 +209,29 @@
 
     .corpus-card a { color: #000; text-decoration: underline; font-size: 10pt; font-family: Georgia, serif; }
 
+    /* ── Image corpus ── */
+    .corpus-inner {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .corpus-img {
+      width: 120px;
+      min-width: 120px;
+      height: auto;
+      border: 1px solid #ccc;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .corpus-content { flex: 1; }
+
+    @media (max-width: 480px) {
+      .corpus-inner { flex-direction: column; }
+      .corpus-img { width: 100%; min-width: unset; }
+    }
+
     /* ── Pied de page ── */
     footer {
       margin-top: 3rem;
@@ -248,9 +271,25 @@
       <a class="net-link" href="https://zenodo.org/search?q=d%27Arya&l=list&p=1&s=10&sort=bestmatch">Zenodo</a>
       <a class="net-link" href="https://hcommons.org/members/dindarya/">Humanities Commons</a>
       <a class="net-link" href="https://x.com/din_d74407">X / Twitter</a>
-      <a class="net-link" href="bibliography.html">Bibliographie complète →</a>
+
     </div>
   </header>
+
+  <!-- ══ CORPUS TEL DAN ══ -->
+  <div class="section-label">Corpus sur la Stèle de Tel Dan</div>
+  <div class="corpus-card">
+    <div class="label">HAL · hal-05610636 · En ligne</div>
+    <h2>La Stèle de Tel Dan comme document du premier siècle avant notre ère : un corpus d'études philologiques</h2>
+    <div class="corpus-inner">
+      <a href="bibliography-teldan.html">
+        <img class="corpus-img" src="tel-dan-picture.jpg" alt="Stèle de Tel Dan">
+      </a>
+      <div class="corpus-content">
+        <p>Ce corpus réunit quatre études philologiques et épigraphiques soutenant que la Stèle de Tel Dan est un document du premier siècle avant notre ère produit dans le milieu bilingue hérodien, et non une inscription araméenne authentique du IXe siècle avant notre ère. Les études portent sur la chronologie relative, la rétro-traduction en grec koïné, l'analyse intertextuelle avec les Psaumes de Salomon et la critique du consensus paléographique établi par Demsky (1995).</p>
+        <a href="https://hal.science/hal-05610636">hal.science/hal-05610636</a>
+      </div>
+    </div>
+  </div>
 
   <!-- ══ PROFIL AUTEUR ══ -->
   <div class="section-label">Profil scientifique</div>
@@ -271,14 +310,7 @@
     <a href="https://doi.org/10.5281/zenodo.20039268">DOI Zenodo →</a>
   </div>
 
-  <!-- ══ CORPUS HAL ══ -->
-  <div class="section-label">Corpus — Notice HAL</div>
-  <div class="corpus-card">
-    <div class="label">HAL · hal-05610636 · En ligne</div>
-    <h2>La Stèle de Tel Dan comme document du premier siècle avant notre ère : un corpus d'études philologiques</h2>
-    <p>Ce corpus réunit quatre études philologiques et épigraphiques soutenant que la Stèle de Tel Dan est un document du premier siècle avant notre ère produit dans le milieu bilingue hérodien, et non une inscription araméenne authentique du IXe siècle avant notre ère. Les études portent sur la chronologie relative, la rétro-traduction en grec koïné, l'analyse intertextuelle avec les Psaumes de Salomon et la critique du consensus paléographique établi par Demsky (1995).</p>
-    <a href="https://hal.science/hal-05610636">hal.science/hal-05610636</a>
-  </div>
+
 
 </div>
 
@@ -289,7 +321,7 @@
     <a href="https://hal.science/hal-05610636">HAL</a> ·
     <a href="https://hcommons.org/members/dindarya/">H-Commons</a> ·
     <a href="https://x.com/din_d74407">X/Twitter</a> ·
-    <a href="bibliography.html">Bibliographie</a>
+    <a href="bibliography-teldan.html">Bibliographie</a>
   </span>
 </footer>
 
