@@ -10,3 +10,5 @@ https://dindarya-arch.github.io/papers/TelDan_PsSolomon_EN.html
 https://dindarya-arch.github.io/papers/TelDan_PsSalomon_FR.html
 https://dindarya-arch.github.io/papers/tel-dan-koine_EN.html
 https://dindarya-arch.github.io/papers/tel-dan-koine_FR.html
+https://dindarya-arch.github.io/papers/tel-dan-Hazeal_EN.html
+https://dindarya-arch.github.io/papers/tel-dan-Hazeal_FR.html

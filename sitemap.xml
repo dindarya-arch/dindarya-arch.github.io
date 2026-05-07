@@ -72,4 +72,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-Hazeal_EN.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://dindarya-arch.github.io/papers/tel-dan-Hazeal_FR.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset>
