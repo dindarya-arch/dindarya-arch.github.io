@@ -14,25 +14,8 @@
   <meta property="og:url" content="https://dindarya-arch.github.io/">
   <meta property="og:type" content="website">
 
-  <!-- Highwire Press — corpus HAL -->
-  <meta name="citation_title" content="La Stèle de Tel Dan comme document du premier siècle avant notre ère : un corpus d'études philologiques">
-  <meta name="citation_author" content="d'Arya, Din">
-  <meta name="citation_publication_date" content="2026">
-  <meta name="citation_publisher" content="École Celtique">
-  <meta name="citation_doi" content="10.5281/zenodo.19883514">
-  <meta name="citation_abstract_html_url" content="https://hal.science/hal-05610636">
-  <meta name="citation_language" content="fr">
-  <meta name="citation_keywords" content="Stèle de Tel Dan; Psaumes de Salomon; épigraphie araméenne; grec koïné; chronologie biblique; redatation; premier siècle avant notre ère; période hérodienne; analyse philologique; intertextualité; paléographie; Stèle de Mésha; Judaïsme du Second Temple; inscription Maison de David; Nicolaüs de Damas">
-
-  <!-- Dublin Core -->
-  <meta name="DC.title" content="La Stèle de Tel Dan comme document du premier siècle avant notre ère : un corpus d'études philologiques">
-  <meta name="DC.creator" content="Din d'Arya">
-  <meta name="DC.date" content="2026">
-  <meta name="DC.publisher" content="École Celtique">
-  <meta name="DC.identifier" content="https://hal.science/hal-05610636">
-  <meta name="DC.type" content="preprint">
-  <meta name="DC.language" content="fr">
-  <meta name="DC.rights" content="https://creativecommons.org/licenses/by/4.0/">
+  <!-- Index de site — pas de citation_* ni DC.* ici
+       Google Scholar indexe les publications via leurs pages individuelles -->
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -248,6 +231,31 @@
 
     footer a { color: #000; text-decoration: underline; }
 
+    /* ══ Carte corpus cliquable ══ */
+    .corpus-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 2.5rem;
+    }
+
+    .corpus-card-link .corpus-card {
+      margin-bottom: 0;
+      transition: border-left-color 0.15s, background 0.15s;
+    }
+
+    .corpus-card-link:hover .corpus-card {
+      background: #f2f2f2;
+      border-left-color: #333;
+    }
+
+    .corpus-hal-link {
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      color: #000;
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 16pt; }
       .wrap { padding: 0 1.2rem 4rem; }
@@ -281,19 +289,49 @@
 
   <!-- ══ CORPUS TEL DAN ══ -->
   <div class="section-label">Corpus sur la Stèle de Tel Dan</div>
+  <a href="bibliography-teldan.html" class="corpus-card-link">
   <div class="corpus-card">
     <div class="label">HAL · hal-05610636 · En ligne</div>
     <h2>La Stèle de Tel Dan comme document du premier siècle avant notre ère : un corpus d'études philologiques</h2>
     <div class="corpus-inner">
-      <a href="bibliography-teldan.html">
-        <img class="corpus-img" src="tel-dan-picture.jpg" alt="Stèle de Tel Dan">
-      </a>
+      <img class="corpus-img" src="tel-dan-picture.jpg" alt="Stèle de Tel Dan">
       <div class="corpus-content">
         <p>Ce corpus réunit quatre études philologiques et épigraphiques soutenant que la Stèle de Tel Dan est un document du premier siècle avant notre ère produit dans le milieu bilingue hérodien, et non une inscription araméenne authentique du IXe siècle avant notre ère. Les études portent sur la chronologie relative, la rétro-traduction en grec koïné, l'analyse intertextuelle avec les Psaumes de Salomon et la critique du consensus paléographique établi par Demsky (1995).</p>
-        <a href="https://hal.science/hal-05610636" target="_blank" rel="noopener">hal.science/hal-05610636</a>
+        <span class="corpus-hal-link">hal.science/hal-05610636 →</span>
       </div>
     </div>
   </div>
+  </a>
+
+  <!-- ══ CORPUS ISAÏE ══ -->
+  <div class="section-label">Corpus sur le Livre d'Isaïe</div>
+  <a href="livredisaie.html" class="corpus-card-link">
+  <div class="corpus-card">
+    <div class="label">En cours · Études philologiques</div>
+    <h2>Le Livre d'Isaïe comme document du I<sup>er</sup> siècle avant notre ère</h2>
+    <div class="corpus-inner">
+      <img class="corpus-img" src="rouleau.jpg" alt="Rouleau d'Isaïe">
+      <div class="corpus-content">
+        <p>Ce corpus réunit les publications relatives aux études philologiques et épigraphiques soutenant une redatation du Livre d'Isaïe — non pas avec un noyau et des couches de rédaction depuis le VIII<sup>e</sup> siècle au I<sup>er</sup> siècle, mais écrit d'un seul tenant entre -76 et -67 avant notre ère. Cette rédaction serait issue de l'élite hasmonéenne à des fins politiques d'union des juifs d'orient et d'occident.</p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <!-- ══ CORPUS JÉRÉMIE ══ -->
+  <div class="section-label">Corpus sur les Livres de Jérémie</div>
+  <a href="livredejeremie.html" class="corpus-card-link">
+  <div class="corpus-card">
+    <div class="label">En cours · Études philologiques</div>
+    <h2>Les Livres de Jérémie comme documents redatés</h2>
+    <div class="corpus-inner">
+      <img class="corpus-img" src="rouleau.jpg" alt="Rouleau de Jérémie">
+      <div class="corpus-content">
+        <p>Ce corpus réunit les publications relatives aux Livres de Jérémie — études philologiques, historiques, contextuelles et épigraphiques — soutenant une redatation des Livres de Jérémie.</p>
+      </div>
+    </div>
+  </div>
+  </a>
 
   <!-- ══ PROFIL AUTEUR ══ -->
   <div class="section-label">Profil scientifique</div>
