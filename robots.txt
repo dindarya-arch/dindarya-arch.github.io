@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dindarya-arch.github.io/sitemap.xml
-Sitemap: https://dindarya-arch.github.io/sitemap.txt
