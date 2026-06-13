@@ -7,7 +7,7 @@
   <meta name="description" content="Din d'Arya, chercheur indépendant affilié à l'École Celtique. Analyse philologique et épigraphique des textes du Proche-Orient ancien, avec une spécialisation dans la redatation des textes clés au premier siècle avant notre ère.">
   <meta name="author" content="Din d'Arya">
   <meta name="google-site-verification" content="xVOV4Wob4FBg1FPDMqHstTKyUrAJPBEk1qTcHf7p7ds">
-  <link rel="me" href="https://orcid.org/0009-0004-9915-5893">
+  <link rel="me" href="https://orcid.org/0009-0007-8894-8902">
 
   <meta property="og:title" content="Din d'Arya — École Celtique">
   <meta property="og:description" content="Chercheur indépendant. Analyse philologique et épigraphique des textes du Proche-Orient ancien.">
@@ -256,6 +256,86 @@
       text-decoration: underline;
     }
 
+    /* ══ Encart Working Paper ══ */
+    .wp-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 2.5rem;
+    }
+    .wp-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-left: 3px solid #000;
+      padding: 1.2rem 1.5rem;
+      transition: background 0.15s, border-left-color 0.15s;
+    }
+    .wp-card-link:hover .wp-card {
+      background: #f2f2f2;
+      border-left-color: #333;
+    }
+    .wp-card .label {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 0.4rem;
+    }
+    .wp-card h2 {
+      font-family: Georgia, serif;
+      font-size: 12pt;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.4rem;
+      text-align: left;
+      border: none;
+      padding: 0;
+    }
+    .wp-card .wp-sub {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 0.7rem;
+    }
+    .wp-card p {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      text-align: justify;
+    }
+    .wp-markers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 0.9rem;
+    }
+    .wp-marker {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      padding: 2px 8px;
+      border: 1px solid #aaa;
+      color: #333;
+    }
+    .wp-footer-line {
+      font-family: Georgia, serif;
+      font-size: 9.5pt;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      align-items: center;
+    }
+    .wp-dl {
+      font-family: Georgia, serif;
+      font-size: 9.5pt;
+      color: #000;
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 16pt; }
       .wrap { padding: 0 1.2rem 4rem; }
@@ -278,7 +358,7 @@
       Chercheur indépendant affilié à l'École Celtique, une initiative de recherche indépendante hors affiliation institutionnelle. Mes travaux portent sur l'analyse philologique et épigraphique des textes du Proche-Orient ancien, soutenant que plusieurs documents conventionnellement datés du IXe siècle avant notre ère ont été composés dans le milieu bilingue hérodien du premier siècle avant notre ère. Méthode centrale : <em>datation par contextualisation externe et convergence d'intérêts</em>, combinée à une redatation systématique.
     </p>
     <div class="networks">
-      <a class="net-link" href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a>
+      <a class="net-link" href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="noopener">ORCID 0009-0007-8894-8902</a>
       <a class="net-link" href="https://hal.science/search/index/?q=*&authIdHal_s=din-d039-arya" target="_blank" rel="noopener">HAL</a>
       <a class="net-link" href="https://zenodo.org/search?q=d%27Arya&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="noopener">Zenodo</a>
       <a class="net-link" href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">Humanities Commons</a>
@@ -347,6 +427,29 @@
   </div>
   </a>
 
+  <!-- ══ WORKING PAPER — ÉVANGILE DE PIERRE ══ -->
+  <div class="section-label">Working Paper — Juin 2026</div>
+  <a href="evangile-pierre.html" class="wp-card-link">
+    <div class="wp-card">
+      <div class="label">Nouveau · Document de travail · Philologie · IIe siècle CE</div>
+      <h2>L'Évangile de Pierre — Le faux de Pline le Jeune, écrit en 112 CE</h2>
+      <p class="wp-sub">Substitution, anti-datation politique et réaction militaire. <em>Stylus primum, pilum deinde.</em></p>
+      <p>Cette étude philologique et historique propose d'attribuer l'Évangile de Pierre à Pline le Jeune, rédigé en Bithynie-Pont vers 112 CE en qualité de <em>Legatus Augusti</em>. L'hypothèse repose sur trois piliers : l'identification d'un motif politique précis — couvrir la crucifixion du roi des Juifs à Pella le 14 Nisan 107 CE — ; la cohérence des anomalies textuelles avec un auteur latinophone cultivé du début du IIe siècle ; et la traçabilité d'une diffusion via les scriptoria alexandrins. La guerre de Kitos (115–117 CE) est interprétée comme la réponse des Juifs hellénistes d'Orient au narratif fallacieux imposé par ce rouleau.</p>
+      <div class="wp-markers">
+        <span class="wp-marker">7 marqueurs philologiques</span>
+        <span class="wp-marker">Cognitio provinciale</span>
+        <span class="wp-marker">Petronius Polianus</span>
+        <span class="wp-marker">Docétisme involontaire</span>
+        <span class="wp-marker">Guerre de Kitos</span>
+        <span class="wp-marker">Édesse 116 CE</span>
+      </div>
+      <div class="wp-footer-line">
+        <span class="wp-dl">↓ Télécharger le PDF (31 p.)</span>
+        <span>Din d'Arya · École Celtique · ORCID 0009-0007-8894-8902 · Juin 2026</span>
+      </div>
+    </div>
+  </a>
+
   <!-- ══ PROFIL AUTEUR ══ -->
   <div class="section-label">Profil scientifique</div>
   <div class="author-card">
@@ -373,7 +476,7 @@
 <footer style="max-width:720px; margin:0 auto; padding:2rem 2rem 3rem;">
   <span>Din d'Arya · École Celtique · 2026</span>
   <span>
-    <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID</a> ·
+    <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="noopener">ORCID</a> ·
     <a href="https://hal.science/hal-05610636" target="_blank" rel="noopener">HAL</a> ·
     <a href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">H-Commons</a> ·
     <a href="https://x.com/din_d74407" target="_blank" rel="noopener">X/Twitter</a> ·
