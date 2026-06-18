@@ -6,7 +6,7 @@
   <title>The Tell Afis Fragment and the Tel Dan Stele — Din d'Arya</title>
   <meta name="description" content="Presentation page for the French and English preprints on the Tell Afis fragment and the Tel Dan Stele, proposing physical, philological, and semantic convergences in favor of a common assembly.">
   <meta name="author" content="Din d'Arya">
-  <link rel="me" href="https://orcid.org/0009-0007-8894-8902">
+  <link rel="me" href="https://orcid.org/0009-0004-9915-5893">
 
   <meta property="og:title" content="The Tell Afis Fragment and the Tel Dan Stele — Din d'Arya">
   <meta property="og:description" content="French and English preprints presenting the Tell Afis fragment as a candidate fourth fragment for the Tel Dan Stele dossier.">
@@ -16,7 +16,7 @@
   <meta name="citation_title" content="The Tell Afis Fragment and the Tel Dan Stele: Physical, Philological, and Semantic Convergences — A Case for a Common Assembly">
   <meta name="citation_author" content="d'Arya, Din">
   <meta name="citation_author_institution" content="École Celtique">
-  <meta name="citation_author_orcid" content="https://orcid.org/0009-0007-8894-8902">
+  <meta name="citation_author_orcid" content="https://orcid.org/0009-0004-9915-5893">
   <meta name="citation_publication_date" content="2026/05/13">
   <meta name="citation_publisher" content="École Celtique">
   <meta name="citation_doi" content="10.5281/zenodo.20159652">
@@ -50,251 +50,103 @@
       text-align: justify;
     }
 
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem 6rem; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 2rem 6rem; }
 
-    /* ── NAV ── */
+    /* ── Bandeau hero ── */
+    .hero { width: 100%; position: relative; overflow: hidden; line-height: 0; }
+    .hero img.hero-bg { width: 100%; height: 220px; object-fit: cover; object-position: center top; display: block; }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.50) 100%);
+      display: flex; align-items: flex-end; justify-content: center; padding: 0 1.5rem 1.2rem;
+    }
+    .hero-tagline {
+      font-family: Georgia, 'Times New Roman', serif; font-size: 14pt; font-style: italic;
+      color: #fff; text-align: center; text-shadow: 0 2px 8px rgba(0,0,0,0.75);
+      letter-spacing: 0.02em; line-height: 1.4;
+    }
+
+    /* ── Nav ── */
     nav {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 1.2rem 2rem;
-      border-bottom: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      max-width: 960px; margin: 0 auto; padding: 1.2rem 2rem;
+      border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between;
     }
-    .nav-back {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #000;
-      text-decoration: underline;
-    }
-    .nav-label {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #555;
-      font-style: italic;
-    }
+    .nav-back { font-family: Georgia, serif; font-size: 10pt; color: #000; text-decoration: underline; display: flex; align-items: center; gap: 0.5rem; }
+    .nav-logo { width: 36px; height: auto; }
+    .nav-label { font-family: Georgia, serif; font-size: 10pt; color: #555; font-style: italic; }
 
-    /* ── EN-TÊTE ── */
-    header {
-      padding: 3rem 0 2rem;
-      border-bottom: 2px solid #000;
-      margin-bottom: 2.5rem;
-    }
+    /* ── En-tête ── */
+    header { padding: 3rem 0 2rem; border-bottom: 2px solid #000; margin-bottom: 2.5rem; }
+    .affil { font-family: Georgia, serif; font-size: 10pt; color: #000; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; text-align: left; }
+    h1 { font-family: Georgia, serif; font-size: 20pt; font-weight: bold; color: #000; margin-bottom: 0.8rem; line-height: 1.2; text-align: left; }
+    h1.fr { font-size: 17pt; margin-top: 0.5rem; }
+    .hero-sub { font-family: Georgia, serif; font-size: 11pt; font-style: italic; color: #333; margin-bottom: 0.8rem; }
+    .hero-meta { font-family: Georgia, serif; font-size: 10pt; color: #555; margin-bottom: 0.5rem; text-align: left; }
+    .meta { font-family: Georgia, serif; font-size: 10pt; color: #555; font-style: italic; margin-bottom: 1.2rem; }
+    .corpus-label { font-family: Georgia, serif; font-size: 10pt; color: #555; font-style: italic; margin-bottom: 1rem; }
 
-    .site-logo {
-      width: 72px;
-      height: auto;
-      display: block;
-      margin-bottom: 1rem;
-    }
-
-    .affil {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #000;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.4rem;
-      text-align: left;
-    }
-
-    .corpus-label {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #555;
-      font-style: italic;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-
-    h1 {
-      font-family: Georgia, serif;
-      font-size: 18pt;
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 0.3rem;
-      line-height: 1.2;
-      text-align: left;
-    }
-
-    h1.fr {
-      font-size: 16pt;
-      margin-top: 0.6rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .hero-sub {
-      font-family: Georgia, serif;
-      font-size: 11pt;
-      font-style: italic;
-      color: #333;
-      margin-bottom: 0.8rem;
-      text-align: left;
-    }
-
-    .hero-meta {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #555;
-      margin-bottom: 0.5rem;
-      text-align: left;
-    }
-
-    .hero-links {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #555;
-      margin-bottom: 1.5rem;
-      text-align: left;
-      line-height: 1.9;
-    }
+    /* ── Liens header ── */
+    .hero-links { font-family: Georgia, serif; font-size: 10pt; color: #555; margin-bottom: 1.5rem; line-height: 1.9; }
     .hero-links a { color: #000; text-decoration: underline; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+    .link-doi { font-family: Georgia, serif; font-size: 10pt; font-weight: bold; color: #000; text-decoration: underline; padding: 3px 10px; border: 1px solid #ccc; }
+    .link-pdf { font-family: Georgia, serif; font-size: 10pt; color: #000; text-decoration: underline; padding: 3px 10px; border: 1px solid #ccc; }
+    .link-pdf:hover, .link-doi:hover { background: #f5f5f5; }
+    .link-pdf.fr { border-style: dashed; }
 
-    /* ── ÉTIQUETTES DE SECTION ── */
-    .section-label {
-      font-family: Georgia, serif;
-      font-size: 9pt;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #555;
-      margin: 2.5rem 0 1.2rem;
-      padding-bottom: 0.4rem;
-      border-bottom: 1px solid #ccc;
-      text-align: left;
+    /* ── Sections ── */
+    .section-label, .section {
+      font-family: Georgia, serif; font-size: 9pt; text-transform: uppercase;
+      letter-spacing: 0.1em; color: #555; margin: 2rem 0 1rem;
+      padding-bottom: 0.4rem; border-bottom: 1px solid #ccc; text-align: left;
     }
 
-    /* ── BLOCS ÉDITION ── */
-    .edition-card {
-      background: #f9f9f9;
-      border: 1px solid #ccc;
-      border-left: 3px solid #000;
-      padding: 1.2rem 1.5rem;
-      margin-bottom: 1.5rem;
+    /* ── Abstract ── */
+    .abstract {
+      font-family: Georgia, serif; font-size: 11pt; color: #000; line-height: 1.65;
+      padding-left: 1rem; border-left: 3px solid #000; margin-bottom: 1.5rem; text-align: justify;
     }
 
-    .edition-card .elabel {
-      font-family: Georgia, serif;
-      font-size: 9pt;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #555;
-      margin-bottom: 0.4rem;
+    /* ── Tags ── */
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.2rem; }
+    .tag { font-family: Georgia, serif; font-size: 9pt; padding: 2px 8px; border: 1px solid #aaa; color: #333; }
+
+    /* ── Citation box ── */
+    .citation-box {
+      background: #f9f9f9; border: 1px solid #ccc; border-left: 3px solid #000;
+      padding: 1rem 1.2rem; font-family: Georgia, serif; font-size: 10pt; color: #333; line-height: 1.6;
     }
 
-    .edition-card h2 {
-      font-family: Georgia, serif;
-      font-size: 12pt;
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 0.4rem;
-      text-align: left;
-    }
-
-    .edition-card p {
-      font-family: Georgia, serif;
-      font-size: 10.5pt;
-      color: #333;
-      line-height: 1.6;
-      margin-bottom: 0.8rem;
-      text-align: justify;
-    }
-
-    .dl-btn {
-      display: inline-block;
-      background: #000;
-      color: #fff;
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      text-decoration: none;
-      padding: 7px 18px;
-    }
+    /* ── Edition cards (tell-afis) ── */
+    .edition-card { background: #f9f9f9; border: 1px solid #ccc; border-left: 3px solid #000; padding: 1.2rem 1.5rem; margin-bottom: 1.5rem; }
+    .edition-card .elabel { font-family: Georgia, serif; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.08em; color: #555; margin-bottom: 0.4rem; }
+    .edition-card h2 { font-family: Georgia, serif; font-size: 12pt; font-weight: bold; color: #000; margin-bottom: 0.4rem; text-align: left; }
+    .edition-card p { font-family: Georgia, serif; font-size: 10.5pt; color: #333; line-height: 1.6; margin-bottom: 0.8rem; text-align: justify; }
+    .edition-card a { color: #000; text-decoration: underline; font-size: 10pt; font-family: Georgia, serif; }
+    .dl-btn { display: inline-block; background: #000; color: #fff; font-family: Georgia, serif; font-size: 10pt; text-decoration: none; padding: 7px 18px; margin-right: 0.5rem; margin-top: 0.5rem; }
     .dl-btn:hover { background: #333; }
 
-    /* ── RÉSUMÉ / ABSTRACT ── */
-    .text-block {
-      font-family: Georgia, serif;
-      font-size: 11pt;
-      color: #000;
-      line-height: 1.65;
-      margin-bottom: 1.5rem;
-      text-align: justify;
-    }
-    .text-block p + p { margin-top: 0.8rem; }
+    /* ── Corpus inner (image + texte) ── */
+    .corpus-inner { display: flex; gap: 1.2rem; align-items: flex-start; }
+    .corpus-img { width: 120px; min-width: 120px; height: auto; border: 1px solid #ccc; flex-shrink: 0; }
+    .corpus-content { flex: 1; }
+    @media (max-width: 480px) { .corpus-inner { flex-direction: column; } .corpus-img { width: 100%; } }
 
-    /* ── THÈSE CENTRALE ── */
-    .thesis-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .thesis-item {
-      background: #f9f9f9;
-      border: 1px solid #ccc;
-      border-top: 3px solid #000;
-      padding: 1rem;
-    }
-    .thesis-item .tlabel {
-      font-family: Georgia, serif;
-      font-size: 9pt;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #555;
-      margin-bottom: 0.5rem;
-    }
-    .thesis-item p {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #333;
-      line-height: 1.55;
-      text-align: justify;
-    }
-
-    /* ── MOTS-CLÉS ── */
-    .keywords {
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #555;
-      margin-bottom: 2rem;
-      font-style: italic;
-    }
-
-    /* ── NOTE AI ── */
-    .note-box {
-      border: 1px solid #ddd;
-      padding: 0.8rem 1.2rem;
-      margin-bottom: 2rem;
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #666;
-      font-style: italic;
-    }
-
-    /* ── PIED DE PAGE ── */
+    /* ── Pied de page ── */
     footer {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 2rem 2rem 3rem;
-      border-top: 1px solid #ccc;
-      font-family: Georgia, serif;
-      font-size: 10pt;
-      color: #555;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: space-between;
+      margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #ccc;
+      font-family: Georgia, serif; font-size: 10pt; color: #555;
+      display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between;
     }
     footer a { color: #000; text-decoration: underline; }
 
     @media (max-width: 600px) {
-      h1 { font-size: 14pt; }
+      h1 { font-size: 15pt; }
       .wrap { padding: 0 1.2rem 4rem; }
-      nav { padding: 1rem 1.2rem; }
-      .thesis-grid { grid-template-columns: 1fr; }
+      .hero img.hero-bg { height: 150px; }
+      .hero-tagline { font-size: 10pt; }
     }
-  </style>
+</style>
 
   <!-- GoatCounter analytics -->
   <script data-goatcounter="https://dindarya.goatcounter.com/count"
@@ -302,10 +154,20 @@
 </head>
 <body>
 
+<!-- ══ BANDEAU HERO ══ -->
+<div class="hero">
+  <img class="hero-bg" src="../bandeau.jpg" alt="Jérusalem — Proche-Orient ancien">
+  <div class="hero-overlay">
+    <p class="hero-tagline">Pour un regard antérieur celtique sur l'histoire de l'Orient</p>
+  </div>
+</div>
+
 <nav>
-  <a class="nav-back" href="../index.html">← Din d'Arya — École Celtique</a>
-  <span class="nav-label">Tel Dan Corpus · Tell Afis dossier</span>
+  <a class="nav-back" href="../index.html"><img class="nav-logo" src="../Logo.jpg" alt="École Celtique">← Din d'Arya — École Celtique</a>
+  <span class="nav-label">Bibliographie · Tel Dan</span>
 </nav>
+
+
 
 <div class="wrap">
 
@@ -319,7 +181,7 @@
     <h1 class="fr">Le Fragment de Tell Afis et la Stèle de Tel Dan</h1>
     <p class="hero-sub">Convergences physiques, philologiques et sémantiques — Plaidoyer pour un assemblage unique</p>
 
-    <p class="hero-meta">Din d'Arya · École Celtique · ORCID <a href="https://orcid.org/0009-0007-8894-8902">0009-0007-8894-8902</a></p>
+    <p class="hero-meta">Din d'Arya · École Celtique · ORCID <a href="https://orcid.org/0009-0004-9915-5893">0009-0004-9915-5893</a></p>
     <p class="hero-meta">Version 1.0 · 13 May 2026 / 13 mai 2026 · Preprint / Prépublication</p>
 
     <p class="hero-links">
@@ -393,7 +255,7 @@
 <footer>
   <span>Din d'Arya · École Celtique · 2026</span>
   <span>
-    <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="noopener">ORCID 0009-0007-8894-8902</a> ·
+    <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a> ·
     <a href="https://zenodo.org/records/20159652" target="_blank" rel="noopener">Zenodo</a> ·
     <a href="https://hal.science/hal-05622788" target="_blank" rel="noopener">HAL</a> ·
     <a href="https://works.hcommons.org/records/syb38-4f577" target="_blank" rel="noopener">H-Commons</a> ·

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Din d'Arya — École Celtique</title>
+  <meta name="description" content="Din d'Arya, chercheur indépendant affilié à l'École Celtique. Analyse philologique et épigraphique des textes du Proche-Orient ancien, avec une spécialisation dans la redatation des textes clés au premier siècle avant notre ère.">
+  <meta name="author" content="Din d'Arya">
+  <meta name="google-site-verification" content="xVOV4Wob4FBg1FPDMqHstTKyUrAJPBEk1qTcHf7p7ds">
+  <link rel="me" href="https://orcid.org/0009-0004-9915-5893">
+
+  <meta property="og:title" content="Din d'Arya — École Celtique">
+  <meta property="og:description" content="Chercheur indépendant. Analyse philologique et épigraphique des textes du Proche-Orient ancien.">
+  <meta property="og:url" content="https://dindarya-arch.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Index de site — pas de citation_* ni DC.* ici
+       Google Scholar indexe les publications via leurs pages individuelles -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      min-height: 100vh;
+      text-align: justify;
+    }
+
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 2rem 6rem; }
+
+    .site-logo {
+      width: 96px;
+      height: auto;
+      display: block;
+      margin: 0 0 1rem 0;
+    }
+
+    /* ── En-tête ── */
+    header {
+      padding: 3rem 0 2rem;
+      border-bottom: 2px solid #000;
+      margin-bottom: 2.5rem;
+    }
+
+    .affil {
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 22pt;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.8rem;
+      line-height: 1.15;
+      text-align: left;
+    }
+
+    .profile-text {
+      font-family: Georgia, serif;
+      font-size: 11pt;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+
+    /* ── Liens réseaux ── */
+    .networks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1rem;
+    }
+
+    .net-link {
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .net-link:hover { background: #f5f5f5; }
+
+    /* ── Bloc profil auteur ── */
+    .author-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-left: 3px solid #000;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .author-card .label {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 0.4rem;
+    }
+
+    .author-card h2 {
+      font-family: Georgia, serif;
+      font-size: 13pt;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.5rem;
+      text-align: left;
+      border: none;
+      padding: 0;
+    }
+
+    .author-card p {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 0.7rem;
+      text-align: justify;
+    }
+
+    .author-card a {
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* ── Étiquettes de section ── */
+    .section-label {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #555;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+
+    /* ── Bloc corpus HAL ── */
+    .corpus-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-left: 3px solid #000;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .corpus-card .label {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 0.4rem;
+    }
+
+    .corpus-card h2 {
+      font-family: Georgia, serif;
+      font-size: 12pt;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.5rem;
+      text-align: left;
+      border: none;
+      padding: 0;
+    }
+
+    .corpus-card p {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      text-align: justify;
+    }
+
+    .corpus-card a { color: #000; text-decoration: underline; font-size: 10pt; font-family: Georgia, serif; }
+
+    /* ── Image corpus ── */
+    .corpus-inner {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .corpus-img {
+      width: 120px;
+      min-width: 120px;
+      height: auto;
+      border: 1px solid #ccc;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .corpus-content { flex: 1; }
+
+    @media (max-width: 480px) {
+      .corpus-inner { flex-direction: column; }
+      .corpus-img { width: 100%; min-width: unset; }
+    }
+
+    /* ── Pied de page ── */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ccc;
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+
+    footer a { color: #000; text-decoration: underline; }
+
+    /* ══ Carte corpus cliquable ══ */
+    .corpus-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 2.5rem;
+    }
+
+    .corpus-card-link .corpus-card {
+      margin-bottom: 0;
+      transition: border-left-color 0.15s, background 0.15s;
+    }
+
+    .corpus-card-link:hover .corpus-card {
+      background: #f2f2f2;
+      border-left-color: #333;
+    }
+
+    .corpus-hal-link {
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* ══ Encart Working Paper ══ */
+    .wp-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 2.5rem;
+    }
+    .wp-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-left: 3px solid #000;
+      padding: 1.2rem 1.5rem;
+      transition: background 0.15s, border-left-color 0.15s;
+    }
+    .wp-card-link:hover .wp-card {
+      background: #f2f2f2;
+      border-left-color: #333;
+    }
+    .wp-card .label {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 0.4rem;
+    }
+    .wp-card h2 {
+      font-family: Georgia, serif;
+      font-size: 12pt;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.4rem;
+      text-align: left;
+      border: none;
+      padding: 0;
+    }
+    .wp-card .wp-sub {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 0.7rem;
+    }
+    .wp-card p {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      text-align: justify;
+    }
+    .wp-markers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 0.9rem;
+    }
+    .wp-marker {
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      padding: 2px 8px;
+      border: 1px solid #aaa;
+      color: #333;
+    }
+    .wp-footer-line {
+      font-family: Georgia, serif;
+      font-size: 9.5pt;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      align-items: center;
+    }
+    .wp-dl {
+      font-family: Georgia, serif;
+      font-size: 9.5pt;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .publications-title {
+      font-family: Georgia, serif;
+      font-size: 16pt;
+      font-weight: bold;
+      color: #000;
+      margin: 2.5rem 0 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #000;
+      text-align: left;
+    }
+
+    .method-block {
+      background: #f9f9f9;
+      border-left: 3px solid #000;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0 0;
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    .method-block p { margin-bottom: 0.5rem; text-align: justify; }
+    .method-block p:last-child { margin-bottom: 0; }
+    .method-en { color: #444; font-size: 10pt; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 16pt; }
+      .wrap { padding: 0 1.2rem 4rem; }
+    }
+
+    /* ── Bandeau hero ── */
+    .hero {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .hero img.hero-bg {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.50) 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0 1.5rem 1.2rem;
+    }
+
+    .hero-tagline {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 14pt;
+      font-style: italic;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.75);
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+    }
+
+    /* ── Logo dans le header à gauche ── */
+    header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.4rem;
+    }
+
+    .site-logo {
+      width: 80px;
+      min-width: 80px;
+      height: auto;
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    .header-text { flex: 1; }
+
+    @media (max-width: 600px) {
+      .hero img.hero-bg { height: 150px; }
+      .hero-tagline { font-size: 10pt; }
+      header { flex-direction: column; gap: 0.8rem; }
+      .site-logo { width: 60px; }
+    }
+  </style>
+  <!-- GoatCounter analytics -->
+  <script data-goatcounter="https://dindarya.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- ══ BANDEAU HERO ══ -->
+<div class="hero">
+  <img class="hero-bg" src="bandeau.jpg" alt="Jérusalem — Proche-Orient ancien">
+  <div class="hero-overlay">
+    <p class="hero-tagline">Pour un regard antérieur celtique sur l'histoire de l'Orient</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <img class="site-logo" src="Logo.jpg" alt="École Celtique — Sagesse et Héritage">
+    <div class="header-text">
+      <div class="affil">École Celtique · Recherche indépendante</div>
+      <h1>Din d'Arya</h1>
+      <p class="profile-text">
+        Chercheur indépendant affilié à l'École Celtique, une initiative de recherche indépendante hors affiliation institutionnelle. Mes travaux portent sur l'analyse philologique et épigraphique des textes du Proche-Orient ancien, soutenant que plusieurs documents conventionnellement datés du IXe siècle avant notre ère ont été composés dans le milieu bilingue hérodien du premier siècle avant notre ère. Méthode centrale : <em>datation par contextualisation externe et convergence d'intérêts</em>, combinée à une redatation systématique.
+      </p>
+      <div class="networks">
+        <a class="net-link" href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a>
+        <a class="net-link" href="https://hal.science/search/index/?q=*&authIdHal_s=din-d039-arya" target="_blank" rel="noopener">HAL</a>
+        <a class="net-link" href="https://zenodo.org/search?q=d%27Arya&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="noopener">Zenodo</a>
+        <a class="net-link" href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">Humanities Commons</a>
+        <a class="net-link" href="https://x.com/din_d74407" target="_blank" rel="noopener">X / Twitter</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="method-block">
+    <p>Méthode centrale : <em>datation par contextualisation externe et convergence d'intérêts</em> — redatation de textes du Proche-Orient ancien (épigraphie araméenne, philologie comparée, cryptanalyse textuelle). Toutes les publications sont disponibles en <strong>français et en anglais</strong>, déposées sur <strong>HAL-SHS, Zenodo, Humanities Commons</strong> et indexées ORCID.</p>
+    <p class="method-en"><em>Independent philological and epigraphic research on ancient Near Eastern texts. Central method: external contextualization and convergence of political interests. Publications available in French and English on HAL, Zenodo, and HC Commons.</em></p>
+  </div>
+
+  <h2 class="publications-title">Publications</h2>
+
+  <!-- ══ WORKING PAPER — ÉVANGILE DE PIERRE ══ -->
+  <a href="evangile-pierre.html" class="wp-card-link">
+    <div class="wp-card">
+      <div class="label">Juin 2026 · Philologie · Faux littéraire · <em>Gospel of Peter forgery · Pliny the Younger authorship</em></div>
+      <h2>L'Évangile de Pierre est un faux de Pline le Jeune, rédigé en 112 CE — <em>The Gospel of Peter is a forgery authored by Pliny the Younger</em></h2>
+      <p class="wp-sub">Substitution, anti-datation politique et réaction militaire. <em>Stylus primum, pilum deinde.</em></p>
+      <p>Cette étude philologique et historique attribue l'Évangile de Pierre à Pline le Jeune, rédigé en Bithynie-Pont vers 112 CE en qualité de <em>Legatus Augusti</em>. Motif politique identifié : couvrir la crucifixion du roi des Juifs à Pella le 14 Nisan 107 CE. Les anomalies textuelles — latinisme <em>kenturiôna</em>, docétisme involontaire, sept sceaux testamentaires — convergent vers un auteur latinophone cultivé du IIe siècle. La guerre de Kitos (115–117 CE) est la réponse des Juifs hellénistes à ce <em>falsum</em> impérial. Disponible en français et en anglais.</p>
+      <div class="wp-markers">
+        <span class="wp-marker">7 marqueurs philologiques</span>
+        <span class="wp-marker">Cognitio provinciale</span>
+        <span class="wp-marker">Kenturiôna · latinisme</span>
+        <span class="wp-marker">Docétisme involontaire</span>
+        <span class="wp-marker">Guerre de Kitos 115–117 CE</span>
+        <span class="wp-marker">Falsum impérial</span>
+      </div>
+      <div class="wp-footer-line">
+        <span class="wp-dl">↓ Télécharger le PDF · FR &amp; EN (31 p.)</span>
+        <span>Din d'Arya · École Celtique · HAL · Zenodo · HC Commons · ORCID 0009-0004-9915-5893</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- ══ CORPUS TEL DAN ══ -->
+  <a href="bibliography-teldan.html" class="corpus-card-link">
+  <div class="corpus-card">
+    <div class="label">Mars 2026 · Épigraphie araméenne · Redatation · <em>Tel Dan Stele forgery · Herodian period · House of David inscription</em> · HAL hal-05610636</div>
+    <h2>La Stèle de Tel Dan est un faux du Ier siècle avant notre ère — <em>The Tel Dan Stele is a Herodian-era forgery</em></h2>
+    <div class="corpus-inner">
+      <img class="corpus-img" src="tel-dan-picture.jpg" alt="Stèle de Tel Dan — inscription araméenne Hazaël Maison de David">
+      <div class="corpus-content">
+        <p>Quatre études philologiques et épigraphiques démontrent que la Stèle de Tel Dan, conventionnellement datée du IXe siècle avant notre ère, est un document fabriqué dans le milieu bilingue hérodien du Ier siècle avant notre ère. Arguments : chronologie relative, rétro-traduction en grec koïné, intertextualité avec les Psaumes de Salomon, critique du consensus paléographique de Demsky (1995). Méthode : <em>datation par contextualisation externe et convergence d'intérêts</em>. Publié en français et en anglais.</p>
+        <span class="corpus-hal-link">hal.science/hal-05610636 →</span>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <!-- ══ CORPUS TEL AFFIS ══ -->
+  <a href="/papers/tell-afis.html" class="corpus-card-link">
+  <div class="corpus-card">
+    <div class="label">Avril 2026 · Épigraphie · Basalte araméen · <em>Tell Afis inscription Hazael Aramaic fragment</em></div>
+    <h2>Le fragment de Tel Affis complète la Stèle de Tel Dan — <em>The Tell Afis fragment as a missing piece of the Tel Dan Stele</em></h2>
+    <div class="corpus-inner">
+      <img class="corpus-img" src="tel-affis.jpg" alt="Fragment de Tel Affis — basalte araméen Hazaël">
+      <div class="corpus-content">
+        <p>Le fragment de Tel Affis (2003, basalte lissé, vieil araméen, inv. TA.03.A.300) mentionne Hazaël — comme la Stèle de Tel Dan. Une correspondance philologique, sémantique et mécanique entre les deux inscriptions est démontrée : Tel Affis fournirait l'incipit HZʾL + MLK absent des trois fragments de Tel Dan. Publié en français et en anglais.</p>
+        <span class="corpus-hal-link">/papers/tell-afis.html →</span>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <!-- ══ CORPUS ISAÏE ══ -->
+  <a href="livredisaie.html" class="corpus-card-link">
+  <div class="corpus-card">
+    <div class="label">En cours · Redatation · <em>Book of Isaiah dating Hasmonean political forgery Late Second Temple</em></div>
+    <h2>Le Livre d'Isaïe est un document hasmonéen du Ier siècle avant notre ère — <em>The Book of Isaiah as a Hasmonean political composition</em></h2>
+    <div class="corpus-inner">
+      <img class="corpus-img" src="rouleau.jpg" alt="Rouleau d'Isaïe — redatation hasmonéenne">
+      <div class="corpus-content">
+        <p>Le Livre d'Isaïe n'est pas un texte à couches rédactionnelles étalées sur sept siècles, mais un document écrit d'un seul tenant entre −76 et −67 avant notre ère, commandité par l'élite hasmonéenne pour unifier les juifs d'Orient et d'Occident. Méthode : <em>datation par contextualisation externe et convergence d'intérêts politiques</em>.</p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <!-- ══ CORPUS JÉRÉMIE ══ -->
+  <a href="livredejeremie.html" class="corpus-card-link">
+  <div class="corpus-card">
+    <div class="label">En cours · Redatation · Cryptanalyse philologique · <em>Book of Jeremiah redating Herodian political chronicle</em></div>
+    <h2>Le Livre de Jérémie est une chronique politique hérodienne codée — <em>The Book of Jeremiah as a coded Herodian political chronicle</em></h2>
+    <div class="corpus-inner">
+      <img class="corpus-img" src="rouleau.jpg" alt="Rouleau de Jérémie — cryptanalyse philologique">
+      <div class="corpus-content">
+        <p>Décryptage verset par verset du Livre de Jérémie à l'aide d'une table de masques : Josias = Hyrcan II, Nabuchodonosor = Marc Antoine. Le texte est une chronique politique du Ier siècle avant notre ère, codée pour survivre à la censure hérodienne. Méthode : cryptanalyse philologique et <em>datation par convergence d'intérêts</em>.</p>
+      </div>
+    </div>
+  </div>
+  </a>
+
+  <!-- ══ PROFIL AUTEUR ══ -->
+  <div class="section-label">Profil scientifique</div>
+  <div class="author-card">
+    <div class="label">Fiche auteur · École Celtique · 2026 · DOI 10.5281/zenodo.20039268</div>
+    <h2>Din d'Arya — Profil scientifique, méthode de datation dichotomique et cryptanalyse philologique</h2>
+    <p>
+      Présentation du chercheur, de l'École Celtique, de la méthode de datation dichotomique (terminus ante quem / terminus post quem) et de la méthodologie de cryptanalyse philologique. Document de référence pour situer les contributions de l'auteur dans le paysage des études sur le Levant ancien.
+    </p>
+    <a href="author-profile_FR.html">Fiche auteur (FR) →</a>
+    &nbsp;&nbsp;
+    <a href="author-profile_FR.pdf">PDF (FR) →</a>
+    &nbsp;&nbsp;
+    <a href="author-profile_EN.html">Author Profile (EN) →</a>
+    &nbsp;&nbsp;
+    <a href="author-profile_EN.pdf">PDF (EN) →</a>
+    &nbsp;&nbsp;
+    <a href="https://doi.org/10.5281/zenodo.20039268" target="_blank" rel="noopener">DOI Zenodo →</a>
+  </div>
+
+
+
+</div>
+
+<footer style="max-width:960px; margin:0 auto; padding:2rem 2rem 3rem;">
+  <span>Din d'Arya · École Celtique · 2026</span>
+  <span>
+    <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID</a> ·
+    <a href="https://hal.science/hal-05610636" target="_blank" rel="noopener">HAL</a> ·
+    <a href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">H-Commons</a> ·
+    <a href="https://x.com/din_d74407" target="_blank" rel="noopener">X/Twitter</a> ·
+    <a href="bibliography-teldan.html">Bibliographie</a>
+  </span>
+</footer>
+
+</body>
+</html>
