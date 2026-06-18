@@ -1,103 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home -->
   <url>
     <loc>https://ecole-celtique.fr/</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
-
-  <!-- Publications -->
   <url>
-    <loc>https://ecole-celtique.fr/publications.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://ecole-celtique.fr/evangile-pierre.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
-
-  <!-- Author profiles -->
+  <url>
+    <loc>https://ecole-celtique.fr/bibliography.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://ecole-celtique.fr/author-profile_FR.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ecole-celtique.fr/author-profile_EN.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Bibliography -->
-  <url>
-    <loc>https://ecole-celtique.fr/bibliography-teldan.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- NEW: tell-afis -->
   <url>
     <loc>https://ecole-celtique.fr/papers/tell-afis.html</loc>
-    <lastmod>2026-05-13</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- Tel Dan corpus -->
-  <url>
-    <loc>https://ecole-celtique.fr/papers/tel-dan-boundary_EN.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ecole-celtique.fr/papers/tel-dan-boundary_FR.html</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://ecole-celtique.fr/papers/tel-dan-psalms-solomon.html</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://ecole-celtique.fr/papers/tel-dan-demsky_EN.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ecole-celtique.fr/papers/tel-dan-demsky_FR.html</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://ecole-celtique.fr/papers/tel-dan-koine-back-translation.html</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ecole-celtique.fr/papers/TelDan_PsSolomon_EN.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ecole-celtique.fr/papers/TelDan_PsSalomon_FR.html</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://ecole-celtique.fr/papers/tel-dan-demsky-1995.html</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ecole-celtique.fr/papers/tel-dan-koine_EN.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ecole-celtique.fr/papers/tel-dan-koine_FR.html</loc>
-    <lastmod>2026-05-13</lastmod>
+    <loc>https://ecole-celtique.fr/papers/tel-dan-antigonos-37-bce.html</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
-
 </urlset>

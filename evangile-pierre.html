@@ -11,7 +11,7 @@
   <meta property="og:type" content="article">
   <meta name="citation_title" content="L'Évangile de Pierre — Le faux de Pline le Jeune, écrit en 112 CE">
   <meta name="citation_author" content="d'Arya, Din">
-  <meta name="citation_author_orcid" content="https://orcid.org/0009-0007-8894-8902">
+  <meta name="citation_author_orcid" content="https://orcid.org/0009-0004-9915-5893">
   <meta name="citation_author_institution" content="École Celtique">
   <meta name="citation_publication_date" content="2026/06/13">
   <meta name="citation_publisher" content="École Celtique">
@@ -33,7 +33,7 @@
   <meta name="DC.type" content="preprint">
   <meta name="DC.language" content="fr">
   <meta name="DC.rights" content="https://creativecommons.org/licenses/by/4.0/">
-  <link rel="me" href="https://orcid.org/0009-0007-8894-8902">
+  <link rel="me" href="https://orcid.org/0009-0004-9915-5893">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -48,17 +48,57 @@
       text-align: justify;
     }
 
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 2rem 6rem; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 2rem 6rem; }
+
+    /* ── BANDEAU HERO ── */
+    .hero {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .hero img.hero-bg {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.50) 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0 1.5rem 1.2rem;
+    }
+    .hero-tagline {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 14pt;
+      font-style: italic;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.75);
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+    }
 
     /* ── NAV ── */
     nav {
-      max-width: 720px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 1.2rem 2rem;
       border-bottom: 1px solid #ccc;
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+    .nav-logo {
+      width: 36px;
+      height: auto;
+      vertical-align: middle;
+      margin-right: 0.6rem;
     }
     .nav-back {
       font-family: Georgia, serif;
@@ -349,7 +389,7 @@
 
     /* ── PIED DE PAGE ── */
     footer {
-      max-width: 720px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 2rem 2rem 3rem;
       border-top: 1px solid #ccc;
@@ -379,8 +419,16 @@
 </head>
 <body>
 
+<!-- ══ BANDEAU HERO ══ -->
+<div class="hero">
+  <img class="hero-bg" src="bandeau.jpg" alt="Jérusalem — Proche-Orient ancien">
+  <div class="hero-overlay">
+    <p class="hero-tagline">Pour un regard antérieur celtique sur l'histoire de l'Orient</p>
+  </div>
+</div>
+
 <nav>
-  <a class="nav-back" href="index.html">← Din d'Arya — École Celtique</a>
+  <a class="nav-back" href="index.html"><img class="nav-logo" src="Logo.jpg" alt="École Celtique">← Din d'Arya — École Celtique</a>
   <span class="nav-label">Document de travail · Juin 2026</span>
 </nav>
 
@@ -392,7 +440,7 @@
     <h1>L'Évangile de Pierre</h1>
     <p class="hero-subtitle">Le faux de Pline le Jeune, écrit en 112 CE</p>
     <div class="hero-device">Stylus primum, pilum deinde. — Le stylet de 112, le javelot de 115.</div>
-    <p class="hero-meta">Din d'Arya · École Celtique · ORCID 0009-0007-8894-8902 · 31 pages · Juin 2026</p>
+    <p class="hero-meta">Din d'Arya · École Celtique · ORCID 0009-0004-9915-5893 · 31 pages · Juin 2026</p>
     <p class="hero-meta">DOI : <a href="https://doi.org/10.5281/zenodo.20677971" target="_blank" rel="noopener">10.5281/zenodo.20677971</a> · <a href="https://zenodo.org/records/20677971" target="_blank" rel="noopener">Zenodo</a> · <a href="https://hal.science/hal-05660567" target="_blank" rel="noopener">HAL hal-05660567</a></p>
     <div style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1rem;">
       <a class="hero-cta" href="evangile-pierre-fr.pdf">↓ PDF (FR)</a>
@@ -654,7 +702,7 @@
 <footer>
   <span>Din d'Arya · École Celtique · 2026</span>
   <span>
-    <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="noopener">ORCID 0009-0007-8894-8902</a> ·
+    <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a> ·
     <a href="https://doi.org/10.5281/zenodo.20677971" target="_blank" rel="noopener">DOI Zenodo</a> ·
     <a href="https://works.hcommons.org/records/7qjrf-esx88" target="_blank" rel="noopener">H-Commons</a> ·
     <a href="https://hal.science/hal-05660567" target="_blank" rel="noopener">HAL hal-05660567</a> ·
