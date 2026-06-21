@@ -1,23 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Din d'Arya — École Celtique</title>
-  <meta name="description" content="Din d'Arya, chercheur indépendant affilié à l'École Celtique. Analyse philologique et épigraphique des textes du Proche-Orient ancien, avec une spécialisation dans la redatation des textes clés au premier siècle avant notre ère.">
-  <meta name="author" content="Din d'Arya">
-  <meta name="google-site-verification" content="xVOV4Wob4FBg1FPDMqHstTKyUrAJPBEk1qTcHf7p7ds">
-  <link rel="me" href="https://orcid.org/0009-0004-9915-5893">
-
-  <meta property="og:title" content="Din d'Arya — École Celtique">
-  <meta property="og:description" content="Chercheur indépendant. Analyse philologique et épigraphique des textes du Proche-Orient ancien.">
-  <meta property="og:url" content="https://dindarya-arch.github.io/">
-  <meta property="og:type" content="website">
-
-  <!-- Index de site — pas de citation_* ni DC.* ici
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Christ crucifié en 107 ? Études bibliques critiques — École Celtique</title>
+<meta content="Et si le Christ avait été crucifié en 107 et non en 33 ? L'École Celtique propose des études bibliques critiques sur l'Évangile de Pierre, Pline le Jeune, Trajan, Josèphe, la Septante, le Logos et les traditions judéo-chrétiennes anciennes." name="description"/>
+<meta content="Din d'Arya" name="author"/>
+<meta content="xVOV4Wob4FBg1FPDMqHstTKyUrAJPBEk1qTcHf7p7ds" name="google-site-verification"/>
+<link href="https://orcid.org/0009-0004-9915-5893" rel="me"/>
+<meta content="Et si le Christ avait été crucifié en 107 et non en 33 ? — École Celtique" property="og:title"/>
+<meta content="Études bibliques critiques : Évangile de Pierre, Pline le Jeune, Trajan, Testimonium Flavianum, Septante, Logos, Christos, Tel Dan et Tell Afis." property="og:description"/>
+<meta content="https://ecole-celtique.fr/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<!-- Index de site — pas de citation_* ni DC.* ici
        Google Scholar indexe les publications via leurs pages individuelles -->
-
-  <style>
+<style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
@@ -346,23 +344,7 @@
       border-bottom: 2px solid #000;
       text-align: left;
     }
-
-    .method-block {
-      background: #f9f9f9;
-      border-left: 3px solid #000;
-      padding: 1rem 1.5rem;
-      margin: 1.5rem 0 0;
-      font-family: Georgia, serif;
-      font-size: 10.5pt;
-      line-height: 1.6;
-      color: #222;
-    }
-
-    .method-block p { margin-bottom: 0.5rem; text-align: justify; }
-    .method-block p:last-child { margin-bottom: 0; }
-    .method-en { color: #444; font-size: 10pt; }
-
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
       h1 { font-size: 16pt; }
       .wrap { padding: 0 1.2rem 4rem; }
     }
@@ -427,162 +409,262 @@
       header { flex-direction: column; gap: 0.8rem; }
       .site-logo { width: 60px; }
     }
-  </style>
-  <!-- GoatCounter analytics -->
-  <script data-goatcounter="https://dindarya.goatcounter.com/count"
-          async src="https://gc.zgo.at/count.js"></script>
+  
 
-</head>
+    /* ── Accroche SEO / page d'accueil ── */
+    .lead-kicker {
+      font-family: Georgia, serif;
+      font-size: 10pt;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.6rem;
+      text-align: left;
+    }
+
+    .hero-question {
+      font-family: Georgia, serif;
+      font-size: 21pt;
+      font-weight: bold;
+      line-height: 1.15;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      padding: 0.55rem 0.85rem;
+      border: 1px solid #000;
+      color: #000;
+      text-decoration: none;
+      background: #fff;
+    }
+
+    .cta-button:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .gateway-card {
+      background: #fff;
+      border: 2px solid #000;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .gateway-card h2 {
+      font-family: Georgia, serif;
+      font-size: 14pt;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.6rem;
+      text-align: left;
+      border: none;
+      padding: 0;
+    }
+
+    .gateway-card p {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+      text-align: justify;
+    }
+
+    .question-list {
+      columns: 2;
+      column-gap: 2rem;
+      margin: 0.7rem 0 0.2rem;
+      padding-left: 1.2rem;
+      font-size: 10.5pt;
+    }
+
+    .question-list li {
+      break-inside: avoid;
+      margin-bottom: 0.25rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero-question { font-size: 17pt; }
+    }
+</style>
+<!-- GoatCounter analytics -->
+<script async="" data-goatcounter="https://dindarya.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script>
+<link href="https://ecole-celtique.fr/" rel="canonical"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ecole-celtique.fr/#website",
+      "name": "École Celtique",
+      "url": "https://ecole-celtique.fr/",
+      "inLanguage": "fr",
+      "description": "Études bibliques critiques, philologie, épigraphie araméenne et histoire des traditions judéo-chrétiennes anciennes."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ecole-celtique.fr/#author",
+      "name": "Din d'Arya",
+      "url": "https://ecole-celtique.fr/",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "École Celtique"
+      },
+      "sameAs": [
+        "https://orcid.org/0009-0004-9915-5893",
+        "https://hcommons.org/members/dindarya/",
+        "https://x.com/din_d74407"
+      ]
+    }
+  ]
+}</script></head>
 <body>
-
 <!-- ══ BANDEAU HERO ══ -->
 <div class="hero">
-  <img class="hero-bg" src="bandeau.jpg" alt="Jérusalem — Proche-Orient ancien">
-  <div class="hero-overlay">
-    <p class="hero-tagline">Pour un regard antérieur celtique sur l'histoire de l'Orient</p>
-  </div>
+<img alt="Jérusalem — Proche-Orient ancien" class="hero-bg" src="bandeau.jpg"/>
+<div class="hero-overlay">
+<p class="hero-tagline">Études bibliques critiques — textes, langues, datations et traditions anciennes</p>
 </div>
-
+</div>
 <div class="wrap">
 
-  <header>
-    <img class="site-logo" src="Logo.jpg" alt="École Celtique — Sagesse et Héritage">
-    <div class="header-text">
-      <div class="affil">École Celtique · Recherche indépendante</div>
-      <h1>Din d'Arya</h1>
-      <p class="profile-text">
-        Chercheur indépendant affilié à l'École Celtique, une initiative de recherche indépendante hors affiliation institutionnelle. Mes travaux portent sur l'analyse philologique et épigraphique des textes du Proche-Orient ancien, soutenant que plusieurs documents conventionnellement datés du IXe siècle avant notre ère ont été composés dans le milieu bilingue hérodien du premier siècle avant notre ère. Méthode centrale : <em>datation par contextualisation externe et convergence d'intérêts</em>, combinée à une redatation systématique.
-      </p>
-      <div class="networks">
-        <a class="net-link" href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a>
-        <a class="net-link" href="https://hal.science/search/index/?q=*&authIdHal_s=din-d039-arya" target="_blank" rel="noopener">HAL</a>
-        <a class="net-link" href="https://zenodo.org/search?q=d%27Arya&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="noopener">Zenodo</a>
-        <a class="net-link" href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">Humanities Commons</a>
-        <a class="net-link" href="https://x.com/din_d74407" target="_blank" rel="noopener">X / Twitter</a>
-      </div>
-    </div>
-  </header>
+<header>
+<img alt="École Celtique — Sagesse et Héritage" class="site-logo" src="Logo.jpg"/>
+<div class="header-text">
+<div class="lead-kicker">École Celtique · Études bibliques critiques · Recherche indépendante</div>
+<h1 class="hero-question">Et si le Christ avait été crucifié en 107 et non en 33 ?</h1>
+<p class="profile-text">
+      L'École Celtique propose une relecture critique des textes bibliques, des traditions judéo-chrétiennes anciennes et des sources romaines. Au centre de ce corpus : l'hypothèse d'un déplacement chronologique du récit de la Passion, depuis un événement situé autour de l'an 107 vers la date traditionnelle de l'an 33.
+    </p>
+<p class="profile-text">
+      Les dossiers publiés croisent l'Évangile de Pierre, Pline le Jeune, Trajan, Ignace d'Antioche, Flavius Josèphe, le Testimonium Flavianum, la Septante, le Logos, le Christos, la Stèle de Tel Dan et les inscriptions araméennes du Proche-Orient ancien.
+    </p>
+<div class="cta-row">
+<a class="cta-button" href="/papers/author.html">Profil auteur — Din d’Arya</a>
+</div>
+</div>
+</header>
 
-  <div class="method-block">
-    <p>Méthode centrale : <em>datation par contextualisation externe et convergence d'intérêts</em> — redatation de textes du Proche-Orient ancien (épigraphie araméenne, philologie comparée, cryptanalyse textuelle). Toutes les publications sont disponibles en <strong>français et en anglais</strong>, déposées sur <strong>HAL-SHS, Zenodo, Humanities Commons</strong> et indexées ORCID.</p>
-    <p class="method-en"><em>Independent philological and epigraphic research on ancient Near Eastern texts. Central method: external contextualization and convergence of political interests. Publications available in French and English on HAL, Zenodo, and HC Commons.</em></p>
-  </div>
-
-  <h2 class="publications-title">Publications</h2>
-
-  <!-- ══ WORKING PAPER — ÉVANGILE DE PIERRE ══ -->
-  <a href="evangile-pierre.html" class="wp-card-link">
-    <div class="wp-card">
-      <div class="label">Juin 2026 · Philologie · Faux littéraire · <em>Gospel of Peter forgery · Pliny the Younger authorship</em></div>
-      <h2>L'Évangile de Pierre est un faux de Pline le Jeune, rédigé en 112 CE — <em>The Gospel of Peter is a forgery authored by Pliny the Younger</em></h2>
-      <p class="wp-sub">Substitution, anti-datation politique et réaction militaire. <em>Stylus primum, pilum deinde.</em></p>
-      <p>Cette étude philologique et historique attribue l'Évangile de Pierre à Pline le Jeune, rédigé en Bithynie-Pont vers 112 CE en qualité de <em>Legatus Augusti</em>. Motif politique identifié : couvrir la crucifixion du roi des Juifs à Pella le 14 Nisan 107 CE. Les anomalies textuelles — latinisme <em>kenturiôna</em>, docétisme involontaire, sept sceaux testamentaires — convergent vers un auteur latinophone cultivé du IIe siècle. La guerre de Kitos (115–117 CE) est la réponse des Juifs hellénistes à ce <em>falsum</em> impérial. Disponible en français et en anglais.</p>
-      <div class="wp-markers">
-        <span class="wp-marker">7 marqueurs philologiques</span>
-        <span class="wp-marker">Cognitio provinciale</span>
-        <span class="wp-marker">Kenturiôna · latinisme</span>
-        <span class="wp-marker">Docétisme involontaire</span>
-        <span class="wp-marker">Guerre de Kitos 115–117 CE</span>
-        <span class="wp-marker">Falsum impérial</span>
-      </div>
-      <div class="wp-footer-line">
-        <span class="wp-dl">↓ Télécharger le PDF · FR &amp; EN (31 p.)</span>
-        <span>Din d'Arya · École Celtique · HAL · Zenodo · HC Commons · ORCID 0009-0004-9915-5893</span>
-      </div>
-    </div>
-  </a>
-
-  <!-- ══ CORPUS TEL DAN ══ -->
-  <a href="bibliography-teldan.html" class="corpus-card-link">
-  <div class="corpus-card">
-    <div class="label">Mars 2026 · Épigraphie araméenne · Redatation · <em>Tel Dan Stele forgery · Herodian period · House of David inscription</em> · HAL hal-05610636</div>
-    <h2>La Stèle de Tel Dan est un faux du Ier siècle avant notre ère — <em>The Tel Dan Stele is a Herodian-era forgery</em></h2>
-    <div class="corpus-inner">
-      <img class="corpus-img" src="tel-dan-picture.jpg" alt="Stèle de Tel Dan — inscription araméenne Hazaël Maison de David">
-      <div class="corpus-content">
-        <p>Quatre études philologiques et épigraphiques démontrent que la Stèle de Tel Dan, conventionnellement datée du IXe siècle avant notre ère, est un document fabriqué dans le milieu bilingue hérodien du Ier siècle avant notre ère. Arguments : chronologie relative, rétro-traduction en grec koïné, intertextualité avec les Psaumes de Salomon, critique du consensus paléographique de Demsky (1995). Méthode : <em>datation par contextualisation externe et convergence d'intérêts</em>. Publié en français et en anglais.</p>
-        <span class="corpus-hal-link">hal.science/hal-05610636 →</span>
-      </div>
-    </div>
-  </div>
-  </a>
-
-  <!-- ══ CORPUS TEL AFFIS ══ -->
-  <a href="/papers/tell-afis.html" class="corpus-card-link">
-  <div class="corpus-card">
-    <div class="label">Avril 2026 · Épigraphie · Basalte araméen · <em>Tell Afis inscription Hazael Aramaic fragment</em></div>
-    <h2>Le fragment de Tel Affis complète la Stèle de Tel Dan — <em>The Tell Afis fragment as a missing piece of the Tel Dan Stele</em></h2>
-    <div class="corpus-inner">
-      <img class="corpus-img" src="tel-affis.jpg" alt="Fragment de Tel Affis — basalte araméen Hazaël">
-      <div class="corpus-content">
-        <p>Le fragment de Tel Affis (2003, basalte lissé, vieil araméen, inv. TA.03.A.300) mentionne Hazaël — comme la Stèle de Tel Dan. Une correspondance philologique, sémantique et mécanique entre les deux inscriptions est démontrée : Tel Affis fournirait l'incipit HZʾL + MLK absent des trois fragments de Tel Dan. Publié en français et en anglais.</p>
-        <span class="corpus-hal-link">/papers/tell-afis.html →</span>
-      </div>
-    </div>
-  </div>
-  </a>
-
-  <!-- ══ CORPUS ISAÏE ══ -->
-  <a href="livredisaie.html" class="corpus-card-link">
-  <div class="corpus-card">
-    <div class="label">En cours · Redatation · <em>Book of Isaiah dating Hasmonean political forgery Late Second Temple</em></div>
-    <h2>Le Livre d'Isaïe est un document hasmonéen du Ier siècle avant notre ère — <em>The Book of Isaiah as a Hasmonean political composition</em></h2>
-    <div class="corpus-inner">
-      <img class="corpus-img" src="rouleau.jpg" alt="Rouleau d'Isaïe — redatation hasmonéenne">
-      <div class="corpus-content">
-        <p>Le Livre d'Isaïe n'est pas un texte à couches rédactionnelles étalées sur sept siècles, mais un document écrit d'un seul tenant entre −76 et −67 avant notre ère, commandité par l'élite hasmonéenne pour unifier les juifs d'Orient et d'Occident. Méthode : <em>datation par contextualisation externe et convergence d'intérêts politiques</em>.</p>
-      </div>
-    </div>
-  </div>
-  </a>
-
-  <!-- ══ CORPUS JÉRÉMIE ══ -->
-  <a href="livredejeremie.html" class="corpus-card-link">
-  <div class="corpus-card">
-    <div class="label">En cours · Redatation · Cryptanalyse philologique · <em>Book of Jeremiah redating Herodian political chronicle</em></div>
-    <h2>Le Livre de Jérémie est une chronique politique hérodienne codée — <em>The Book of Jeremiah as a coded Herodian political chronicle</em></h2>
-    <div class="corpus-inner">
-      <img class="corpus-img" src="rouleau.jpg" alt="Rouleau de Jérémie — cryptanalyse philologique">
-      <div class="corpus-content">
-        <p>Décryptage verset par verset du Livre de Jérémie à l'aide d'une table de masques : Josias = Hyrcan II, Nabuchodonosor = Marc Antoine. Le texte est une chronique politique du Ier siècle avant notre ère, codée pour survivre à la censure hérodienne. Méthode : cryptanalyse philologique et <em>datation par convergence d'intérêts</em>.</p>
-      </div>
-    </div>
-  </div>
-  </a>
-
-  <!-- ══ PROFIL AUTEUR ══ -->
-  <div class="section-label">Profil scientifique</div>
-  <div class="author-card">
-    <div class="label">Fiche auteur · École Celtique · 2026 · DOI 10.5281/zenodo.20039268</div>
-    <h2>Din d'Arya — Profil scientifique, méthode de datation dichotomique et cryptanalyse philologique</h2>
-    <p>
+<h2 class="publications-title">Dossiers principaux du corpus</h2>
+<!-- ══ WORKING PAPER — LE DEUXIÈME SCEAU ══ -->
+<a class="wp-card-link" href="papers/le-deuxieme-sceau.html">
+<div class="wp-card">
+<div class="label">18 juin 2026 · Philologie · Biographie · Complément au premier sceau · <em>Pliny the Younger biography · Gospel of Peter authorship</em></div>
+<div style="display:flex; align-items:flex-start; gap:1.2rem; margin-bottom:0.5rem;">
+<img alt="Pline le Jeune — Plinio Secondo" src="papers/pline-le-jeune.jpg" style="width:80px; flex-shrink:0; border:1px solid #ccc; display:block;"/>
+<div>
+<h2>Le deuxième sceau : Le secret de Pline le Jeune — Biographie, bibliographie et philologie d'un écrivain de chancellerie</h2>
+<p class="wp-sub">L'Évangile de Pierre dans la biographie de Pline le Jeune. Complément à la thèse publiée — DOI 10.5281/zenodo.20677971</p>
+</div>
+</div>
+<p>Ce complément repart de Pline lui-même — sa formation rhétorique sous Quintilien, son rapport au droit, sa pratique de la lettre publiée, sa nomination en Bithynie, ses échanges X, 96-97 avec Trajan — pour montrer que la biographie, la bibliographie et la philologie de Pline le Jeune confortent en tout point la cohérence du premier sceau. L'<em>Epistulae</em> VII, 27 dite « La maison hantée » est la matrice narrative en huit étapes de l'Évangile de Pierre. Cinq niveaux de convergence indépendants — structure, chronologie, signature cognitive, <em>habitus</em> littéraire, profil biographique — désignent un seul et unique candidat.</p>
+</div>
+</a>
+<!-- ══ WORKING PAPER — ÉVANGILE DE PIERRE ══ -->
+<a class="wp-card-link" href="evangile-pierre.html">
+<div class="wp-card">
+<div class="label">Juin 2026 · Philologie · Faux littéraire · <em>Gospel of Peter forgery · Pliny the Younger authorship</em></div>
+<div style="display:flex; align-items:flex-start; gap:1.2rem; margin-bottom:0.5rem;">
+<img alt="L'Évangile de Pierre — 112 CE" src="papers/112.jpg" style="width:80px; flex-shrink:0; border:1px solid #ccc; display:block;"/>
+<div>
+<h2>Le premier sceau : L'Évangile de Pierre est un faux de Pline le Jeune, rédigé vers 112 CE</h2>
+<p class="wp-sub">Substitution, anti-datation politique et réaction militaire. <em>Stylus primum, pilum deinde.</em></p>
+</div>
+</div>
+<p>Cette étude philologique et historique attribue l'Évangile de Pierre à Pline le Jeune, rédigé en Bithynie-Pont vers 112 CE en qualité de <em>Legatus Augusti</em>. Motif politique identifié : couvrir la crucifixion du roi des Juifs à Pella le 14 Nisan 107 CE. Les anomalies textuelles — latinisme <em>kenturiôna</em>, docétisme involontaire, sept sceaux testamentaires — convergent vers un auteur latinophone cultivé du IIe siècle. La guerre de Kitos (115–117 CE) est la réponse des Juifs hellénistes à ce <em>falsum</em> impérial. Disponible en français et en anglais.</p>
+</div>
+</a>
+<!-- ══ CORPUS TEL DAN ══ -->
+<a class="corpus-card-link" href="bibliography-teldan.html">
+<div class="corpus-card">
+<div class="label">Mars 2026 · Épigraphie araméenne · Redatation · <em>Tel Dan Stele forgery · Herodian period · House of David inscription</em> · HAL hal-05610636</div>
+<h2>La Stèle de Tel Dan est un faux du Ier siècle avant notre ère — <em>The Tel Dan Stele is a Herodian-era forgery</em></h2>
+<div class="corpus-inner">
+<img alt="Stèle de Tel Dan — inscription araméenne Hazaël Maison de David" class="corpus-img" src="tel-dan-picture.jpg"/>
+<div class="corpus-content">
+<p>Quatre études philologiques et épigraphiques démontrent que la Stèle de Tel Dan, conventionnellement datée du IXe siècle avant notre ère, est un document fabriqué dans le milieu bilingue hérodien du Ier siècle avant notre ère. Arguments : chronologie relative, rétro-traduction en grec koïné, intertextualité avec les Psaumes de Salomon, critique du consensus paléographique de Demsky (1995). Méthode : <em>datation par contextualisation externe et convergence d'intérêts</em>. Publié en français et en anglais.</p>
+<span class="corpus-hal-link">hal.science/hal-05610636 →</span>
+</div>
+</div>
+</div>
+</a>
+<!-- ══ CORPUS TEL AFFIS ══ -->
+<a class="corpus-card-link" href="/papers/tell-afis.html">
+<div class="corpus-card">
+<div class="label">Avril 2026 · Épigraphie · Basalte araméen · <em>Tell Afis inscription Hazael Aramaic fragment</em></div>
+<h2>Le fragment de Tel Affis complète la Stèle de Tel Dan — <em>The Tell Afis fragment as a missing piece of the Tel Dan Stele</em></h2>
+<div class="corpus-inner">
+<img alt="Fragment de Tel Affis — basalte araméen Hazaël" class="corpus-img" src="tel-affis.jpg"/>
+<div class="corpus-content">
+<p>Le fragment de Tel Affis (2003, basalte lissé, vieil araméen, inv. TA.03.A.300) mentionne Hazaël — comme la Stèle de Tel Dan. Une correspondance philologique, sémantique et mécanique entre les deux inscriptions est démontrée : Tel Affis fournirait l'incipit HZʾL + MLK absent des trois fragments de Tel Dan. Publié en français et en anglais.</p>
+<span class="corpus-hal-link">/papers/tell-afis.html →</span>
+</div>
+</div>
+</div>
+</a>
+<!-- ══ CORPUS ISAÏE ══ -->
+<a class="corpus-card-link" href="livredisaie.html">
+<div class="corpus-card">
+<div class="label">En cours · Redatation · <em>Book of Isaiah dating Hasmonean political forgery Late Second Temple</em></div>
+<h2>Le Livre d'Isaïe est un document hasmonéen du Ier siècle avant notre ère — <em>The Book of Isaiah as a Hasmonean political composition</em></h2>
+<div class="corpus-inner">
+<img alt="Rouleau d'Isaïe — redatation hasmonéenne" class="corpus-img" src="rouleau.jpg"/>
+<div class="corpus-content">
+<p>Le Livre d'Isaïe n'est pas un texte à couches rédactionnelles étalées sur sept siècles, mais un document écrit d'un seul tenant entre −76 et −67 avant notre ère, commandité par l'élite hasmonéenne pour unifier les juifs d'Orient et d'Occident. Méthode : <em>datation par contextualisation externe et convergence d'intérêts politiques</em>.</p>
+</div>
+</div>
+</div>
+</a>
+<!-- ══ CORPUS JÉRÉMIE ══ -->
+<a class="corpus-card-link" href="livredejeremie.html">
+<div class="corpus-card">
+<div class="label">En cours · Redatation · Cryptanalyse philologique · <em>Book of Jeremiah redating Herodian political chronicle</em></div>
+<h2>Le Livre de Jérémie est une chronique politique hérodienne codée — <em>The Book of Jeremiah as a coded Herodian political chronicle</em></h2>
+<div class="corpus-inner">
+<img alt="Rouleau de Jérémie — cryptanalyse philologique" class="corpus-img" src="rouleau.jpg"/>
+<div class="corpus-content">
+<p>Décryptage verset par verset du Livre de Jérémie à l'aide d'une table de masques : Josias = Hyrcan II, Nabuchodonosor = Marc Antoine. Le texte est une chronique politique du Ier siècle avant notre ère, codée pour survivre à la censure hérodienne. Méthode : cryptanalyse philologique et <em>datation par convergence d'intérêts</em>.</p>
+</div>
+</div>
+</div>
+</a>
+<!-- ══ PROFIL AUTEUR ══ -->
+<div class="section-label">Profil scientifique</div>
+<div class="author-card">
+<div class="label">Fiche auteur · École Celtique · 2026 · DOI 10.5281/zenodo.20039268</div>
+<h2>Din d'Arya — Profil scientifique, méthode de datation dichotomique et cryptanalyse philologique</h2>
+<p>
       Présentation du chercheur, de l'École Celtique, de la méthode de datation dichotomique (terminus ante quem / terminus post quem) et de la méthodologie de cryptanalyse philologique. Document de référence pour situer les contributions de l'auteur dans le paysage des études sur le Levant ancien.
     </p>
-    <a href="author-profile_FR.html">Fiche auteur (FR) →</a>
-    &nbsp;&nbsp;
+<a href="author-profile_FR.html">Fiche auteur (FR) →</a>
+      
     <a href="author-profile_FR.pdf">PDF (FR) →</a>
-    &nbsp;&nbsp;
+      
     <a href="author-profile_EN.html">Author Profile (EN) →</a>
-    &nbsp;&nbsp;
+      
     <a href="author-profile_EN.pdf">PDF (EN) →</a>
-    &nbsp;&nbsp;
-    <a href="https://doi.org/10.5281/zenodo.20039268" target="_blank" rel="noopener">DOI Zenodo →</a>
-  </div>
-
-
-
+      
+    <a href="https://doi.org/10.5281/zenodo.20039268" rel="noopener" target="_blank">DOI Zenodo →</a>
 </div>
-
+</div>
 <footer style="max-width:960px; margin:0 auto; padding:2rem 2rem 3rem;">
-  <span>Din d'Arya · École Celtique · 2026</span>
-  <span>
-    <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID</a> ·
-    <a href="https://hal.science/hal-05610636" target="_blank" rel="noopener">HAL</a> ·
-    <a href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">H-Commons</a> ·
-    <a href="https://x.com/din_d74407" target="_blank" rel="noopener">X/Twitter</a> ·
+<span>Din d'Arya · École Celtique · 2026</span>
+<span>
+<a href="https://orcid.org/0009-0004-9915-5893" rel="noopener" target="_blank">ORCID</a> ·
+    <a href="https://hal.science/hal-05610636" rel="noopener" target="_blank">HAL</a> ·
+    <a href="https://hcommons.org/members/dindarya/" rel="noopener" target="_blank">H-Commons</a> ·
+    <a href="https://x.com/din_d74407" rel="noopener" target="_blank">X/Twitter</a> ·
     <a href="bibliography-teldan.html">Bibliographie</a>
-  </span>
+</span>
 </footer>
-
 </body>
 </html>
