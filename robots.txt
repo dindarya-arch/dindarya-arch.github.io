@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Autorisation explicite pour Google Scholar
-User-agent: GoogleScholar
-Allow: /
-
-# Sitemap principal
 Sitemap: https://ecole-celtique.fr/sitemap.xml
