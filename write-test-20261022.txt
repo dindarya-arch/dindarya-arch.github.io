@@ -1,1 +1,0 @@
-Test d'écriture du connecteur ChatGPT sur une branche temporaire. Aucun changement de main.
