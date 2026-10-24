@@ -72,10 +72,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/zodiac/zodiac.css">
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://dindarya.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
-<nav class="site-nav" aria-label="Navigation principale"><a class="brand" href="/index.html"><img src="/Logo.jpg" alt="">École Celtique</a><a href="/papers/">Essais</a><a href="/papers/author.html">Din d’Arya</a><span aria-current="page">Zodiac</span></nav>
+<!-- ══ BANDEAU HERO (cadre commun) ══ -->
+<div class="ec-hero">
+  <img class="ec-hero-bg" src="/bandeau.jpg" alt="Jérusalem — Proche-Orient ancien">
+  <div class="ec-hero-overlay">
+    <p class="ec-hero-tagline">Pour un regard antérieur celtique sur l'histoire de l'Orient</p>
+  </div>
+</div>
+
+<nav class="ec-nav" aria-label="Navigation principale">
+  <a class="nav-back" href="/index.html"><img class="nav-logo" src="/Logo.jpg" alt="École Celtique">← Din d'Arya — École Celtique</a>
+  <span class="nav-label">Essais · Zodiac</span>
+</nav>
 
 <main class="wrap" id="contenu">
 
@@ -89,6 +102,10 @@
       <span class="k">Longitude terrestre</span>
       <span class="num">= 206,178° − λ<sub>écliptique</sub></span>
       <span class="k">sens inverse · J2000</span>
+    </div>
+    <div class="dl-row">
+      <a class="dl-btn" href="/papers/zodiac/zodiac-synthese.pdf" download>Télécharger la synthèse <small>PDF · 8 pages</small></a>
+      <a class="dl-btn alt" href="/papers/zodiac/zodiac-donnees.xlsx" download>Télécharger le tableur <small>Excel · 6 onglets</small></a>
     </div>
   </div>
   <div class="roue">
@@ -196,8 +213,6 @@
     <h2>Le dossier <em>complet</em></h2>
   </div>
   <div class="docs">
-    <a class="doc" href="/papers/zodiac/zodiac-synthese.pdf" download><div class="type">Télécharger · PDF · 8 pages</div><h3>Synthèse du calage Spica – Paris</h3><p>Le modèle, les 13 secteurs, les étoiles principales, les 18 étoiles secondaires vérifiées, les calages comparés et l'historique des versions.</p><p class="num" style="font-size:12px">Zodiaque géodésique — Synthèse.pdf</p></a>
-    <a class="doc" href="/papers/zodiac/zodiac-donnees.xlsx" download><div class="type">Télécharger · Excel</div><h3>Données vérifiées</h3><p>Copie du classeur fourni avec l’essai : paramètres, étoiles, secteurs, phases comparées et villes de référence.</p></a>
     <a class="doc" href="https://docs.google.com/spreadsheets/d/1vBdAsOD8PZM_sxUdHRptpfXLK4QDdFH2_l2V6Kj_M5w/edit" target="_blank" rel="noopener"><div class="type">Google Sheets · 6 onglets</div><h3>Données vérifiées</h3><p>La phase φ se règle dans l'onglet Paramètres : méridiens et secteurs se recalculent.</p><ul><li>Paramètres</li><li>Étoiles principales et secondaires</li><li>Secteurs</li><li>Phases comparées</li><li>Villes de référence</li></ul></a>
     <a class="doc" href="https://drive.google.com/drive/folders/1V9fiGlDHF97Pxnp-yRn6gENekDyQqbyl" target="_blank" rel="noopener"><div class="type">Google Drive</div><h3>Dossier Zodiac Geodesique</h3><p>Les roues en haute définition, les calculs de moindres carrés, la relecture des versions V2 et V3, et les anciennes versions dans « archives ».</p></a>
   </div>
@@ -207,8 +222,16 @@
 </main>
 <footer class="wrap">
   <p>Sources : catalogue PyEphem 4.2.1 et coordonnées J2000 publiées sur Wikipédia ; E. Delporte, <i>Délimitation scientifique des constellations</i>, UAI, 1930 ; base GeoNames pour les villes. Carte : Natural Earth via world-atlas. Projection azimutale équidistante polaire, coupée à 60° S.</p>
-  <p>Zodiaque géodésique à 13 signes · version de synthèse du 24 octobre 2026.</p>
-<p><a href="/index.html">← Accueil de l’École Celtique</a> · <a href="/papers/">Essais</a></p>
+  <div class="ec-footer">
+    <span>Din d'Arya · École Celtique · 2026</span>
+    <span>
+      <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a> ·
+      <a href="https://hal.science/hal-05610636" target="_blank" rel="noopener">HAL</a> ·
+      <a href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">H-Commons</a> ·
+      <a href="/papers/">Essais</a> ·
+      <a href="/index.html">← Accueil</a>
+    </span>
+  </div>
 </footer>
 
 <script src="/assets/zodiac/vendor/d3-7.8.5.min.js"></script>
