@@ -133,7 +133,7 @@ const PAIRES=[
  ["Aldebaran","Taureau","Sanctuaire d'Ise","0,34","Forte","L'œil du Taureau, étoile royale, sur le lieu le plus sacré du shintô."],
  ["Zavijava","Vierge","Istanbul","0,03","Moyenne","Étoile secondaire de la Vierge, sur la ville des deux continents."],
  ["Zosma","Lion","Babylone","0,44","Moyenne","Le dos du Lion sur la cité qui a nommé les constellations."],
- ["Antares","Scorpion","Rio de Janeiro","0,40","Moyenne","Troisième étoile royale, sur une métropole sans lien symbolique évident."]];
+ ["Antares","Scorpion","Rio de Janeiro","0,40","Moyenne","Troisième étoile royale, sur la grande métropole du Brésil."]];
 const pb=document.getElementById("paires");
 PAIRES.forEach(p=>{const d=document.createElement("div");d.className="paire"+(p[4]==="Forte"?"":" moy");
   d.innerHTML=`<span class="tag">${p[1]} · ${p[4]}</span><div class="etoile">${p[0]}</div><div class="lieu">${p[2]}</div><div class="delta">${p[3]}°<small>d'écart</small></div><p>${p[5]}</p>`;pb.appendChild(d)});
@@ -141,7 +141,8 @@ PAIRES.forEach(p=>{const d=document.createElement("div");d.className="paire"+(p[
 /* ---------- TABLE ÉTOILES ---------- */
 const tb=document.getElementById("tetoiles");
 SYN.main.forEach(r=>{const tr=document.createElement("tr");if(/^Forte|ancrage/.test(r[7]))tr.className="fort";
-  tr.innerHTML=`<td>${r[0]}</td><td>${r[1]}</td><td class="num">${fr(r[2])}°</td><td class="num">${lonf(r[4])}</td><td>${r[5]}${r[6]&&r[6]!=="—"?` <span class="num res">(${r[6]}°)</span>`:""}</td><td class="res">${r[7]}</td>`;tb.appendChild(tr)});
+  const res=r[7].replace(/^Coïncidence de métropole$/,"Métropole").replace(/^Aucune$/,"—").replace(", à la limite","");
+  tr.innerHTML=`<td>${r[0]}</td><td>${r[1]}</td><td class="num">${fr(r[2])}°</td><td class="num">${lonf(r[4])}</td><td>${r[5]}${r[6]&&r[6]!=="—"?` <span class="num res">(${r[6]}°)</span>`:""}</td><td class="res">${res}</td>`;tb.appendChild(tr)});
 
 /* ---------- CALAGES ---------- */
 const cb=document.getElementById("cals");
