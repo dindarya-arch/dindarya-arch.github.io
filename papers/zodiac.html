@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zodiac — Le Ciel posé sur la Terre · École Celtique</title>
+<meta name="description" content="Un essai sur le zodiaque géodésique à treize constellations : calage Spica–Paris, méridiens terrestres, correspondances et limites du modèle.">
+<meta name="author" content="Din d’Arya">
+<link rel="canonical" href="https://ecole-celtique.fr/papers/zodiac.html">
+<!-- Une seule édition française : aucune alternative hreflang. -->
+<meta property="og:title" content="Zodiac — Le Ciel posé sur la Terre · École Celtique">
+<meta property="og:description" content="Un essai sur le zodiaque géodésique à treize constellations : calage Spica–Paris, méridiens terrestres, correspondances et limites du modèle.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ecole-celtique.fr/papers/zodiac.html">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="École Celtique">
+<meta property="og:image" content="https://ecole-celtique.fr/bandeau.jpg">
+<meta property="og:image:alt" content="Bandeau de l’École Celtique">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zodiac — Le Ciel posé sur la Terre · École Celtique">
+<meta name="twitter:description" content="Un essai sur le zodiaque géodésique à treize constellations : calage Spica–Paris, méridiens terrestres, correspondances et limites du modèle.">
+<meta name="twitter:image" content="https://ecole-celtique.fr/bandeau.jpg">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ecole-celtique.fr/papers/zodiac.html#article",
+      "mainEntityOfPage": "https://ecole-celtique.fr/papers/zodiac.html",
+      "headline": "Zodiac — Le Ciel posé sur la Terre",
+      "description": "Un essai sur le zodiaque géodésique à treize constellations : calage Spica–Paris, méridiens terrestres, correspondances et limites du modèle.",
+      "inLanguage": "fr-FR",
+      "articleSection": "Zodiaque géodésique",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "Din d’Arya",
+        "url": "https://ecole-celtique.fr/papers/author.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "École Celtique",
+        "url": "https://ecole-celtique.fr/"
+      },
+      "image": "https://ecole-celtique.fr/bandeau.jpg"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://ecole-celtique.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Essais",
+          "item": "https://ecole-celtique.fr/papers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Zodiac",
+          "item": "https://ecole-celtique.fr/papers/zodiac.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/zodiac/zodiac.css">
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<nav class="site-nav" aria-label="Navigation principale"><a class="brand" href="/index.html"><img src="/Logo.jpg" alt="">École Celtique</a><a href="/papers/">Essais</a><a href="/papers/author.html">Din d’Arya</a><span aria-current="page">Zodiac</span></nav>
+
+<main class="wrap" id="contenu">
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Zodiaque géodésique · 13 signes</div>
+    <h1 style="margin-top:18px">Zodiac<span class="essay-title">Le Ciel posé sur <em>la Terre</em></span></h1>
+    <p class="essay-meta">Din d’Arya · École Celtique · Essai · Synthèse du 24 octobre 2026</p>
+    <p class="lede">Treize constellations, à leurs largeurs réelles, déroulées sur les méridiens du globe. <b>Spica</b>, l'épi de la Vierge, se pose sur <b>Paris</b>. Le Lion tombe alors sur le Proche-Orient, de Thèbes à la Perse.</p>
+    <div class="formule">
+      <span class="k">Longitude terrestre</span>
+      <span class="num">= 206,178° − λ<sub>écliptique</sub></span>
+      <span class="k">sens inverse · J2000</span>
+    </div>
+  </div>
+  <div class="roue">
+    <svg id="carte" viewBox="-70 -70 1140 1140" role="img" aria-label="Roue des 13 constellations autour d'une carte polaire de la Terre, Spica sur Paris"></svg>
+    <div class="statut" id="statut">Le zodiaque tourne jusqu'à ce que Spica rencontre le méridien de Paris…</div>
+    <div class="info" id="info" hidden></div>
+  </div>
+</header>
+<nav class="essay-toc" aria-label="Sommaire"><a href="#histoire">Histoire</a><a href="#zodiaque">Treize constellations</a><a href="#geographie">Géographie</a><a href="#correspondances">Correspondances</a><a href="#etoiles">Étoiles</a><a href="#calages">Calages</a><a href="#limites">Limites</a><a href="#documents">Documents</a></nav>
+<noscript><p>Activez JavaScript pour explorer la roue et les tableaux interactifs. Les documents téléchargeables ci-dessous contiennent les données du modèle.</p></noscript>
+
+<section id="histoire">
+  <div class="sec-head lire">
+    <div class="eyebrow">L'histoire</div>
+    <h2>Trois mille ans à projeter <em>le ciel</em> sur le monde</h2>
+    <p class="res">De Babylone aux astrologues du XXe siècle, l'idée revient sans cesse : chaque région de la Terre aurait sa part de ciel. Ce projet reprend la question avec les étoiles réelles.</p>
+  </div>
+  <div class="frise">
+    <div class="etape"><div class="date">Ier mill. av. J.-C.</div><div><h3>Babylone nomme la route de la Lune</h3><p>Les tablettes du MUL.APIN listent les constellations que traversent la Lune et les planètes. Le Lion, le Scorpion et le poisson-chèvre d'Ea y sont déjà.</p></div></div>
+    <div class="etape"><div class="date">IIe siècle</div><div><h3>Ptolémée partage le monde connu</h3><p>Dans le Tétrabible, il distribue les régions par quadrants et triplicités : chaque peuple reçoit des signes.</p></div></div>
+    <div class="etape"><div class="date">XVIIe siècle</div><div><h3>Lilly codifie les nations</h3><p>L'astrologie mondiale attribue l'Angleterre au Bélier et la France, le plus souvent, au Lion. Le lion anglais est héraldique, pas astrologique.</p></div></div>
+    <div class="etape"><div class="date">1929</div><div><h3>Johndro plaque le zodiaque sur les longitudes</h3><p>Après Sepharial, il pose les 360° du zodiaque sur les 360° du globe, en douze signes égaux, avec 0° Bélier à Greenwich.</p></div></div>
+    <div class="etape"><div class="date">1930</div><div><h3>Delporte trace les frontières du ciel</h3><p>L'Union astronomique internationale fixe les limites des constellations. Sur l'écliptique, elles sont très inégales, et Ophiuchus s'y glisse entre le Scorpion et le Sagittaire.</p></div></div>
+    <div class="etape"><div class="date">1995</div><div><h3>Le treizième signe</h3><p>Walter Berg popularise un zodiaque à 13 signes qui inclut Ophiuchus, le porteur de serpent.</p></div></div>
+    <div class="etape ici"><div class="date">2026</div><div><h3>Le calage Spica – Paris</h3><p>Les largeurs réelles des constellations, un ancrage sur une étoile plutôt que sur le point vernal, et un ciel lu en miroir, comme on le voit en levant la tête.</p></div></div>
+  </div>
+</section>
+
+<section id="zodiaque">
+  <div class="sec-head lire">
+    <div class="eyebrow">Le zodiaque réel</div>
+    <h2>Treize signes, <em>aucun</em> de la même taille</h2>
+    <p class="res">Les manuels donnent 30° à chaque signe. Sur l'écliptique réelle, la Vierge en couvre 44 et le Scorpion moins de 7. Le modèle garde ces proportions.</p>
+  </div>
+  <div class="bande-box"><div class="bande" id="bande"></div></div>
+  <p class="legende">Longitude écliptique J2000, de 29° (entrée du Bélier) à 389° (sortie des Poissons). Limites UAI arrondies. Le losange marque Spica, point d'ancrage.</p>
+</section>
+
+<section id="geographie">
+  <div class="sec-head lire">
+    <div class="eyebrow">La géographie</div>
+    <h2>Ce que chaque signe <em>recouvre</em></h2>
+    <p class="res">En sens inverse, les signes avancent vers l'ouest. Touchez un secteur pour l'éclairer sur la roue.</p>
+  </div>
+  <div class="secteurs" id="secteurs"></div>
+</section>
+
+<section id="correspondances">
+  <div class="vedette">
+    <div>
+      <h2 class="eyebrow">Les correspondances</h2>
+      <p class="grand" style="margin-top:16px">Le Lion couvre de <em>32°</em> à <em>68°</em> est. Thèbes, Jérusalem, Babylone et la Perse y tombent toutes.</p>
+    </div>
+    <div class="emblemes">
+      <div class="emb"><b>Perse</b><span>Le Lion et Soleil. Le Soleil est le maître traditionnel du signe du Lion.</span></div>
+      <div class="emb"><b>Babylone</b><span>Les lions de la porte d'Ishtar, dans la ville où le zodiaque est né.</span></div>
+      <div class="emb"><b>Jérusalem</b><span>Le lion de Juda. Denebola, la queue du Lion, passe à 0,66°.</span></div>
+      <div class="emb"><b>Thèbes</b><span>Sekhmet, la lionne. Léontopolis, dans le delta, reste à 0,8° de la frontière.</span></div>
+    </div>
+  </div>
+  <div class="paires" id="paires"></div>
+</section>
+
+<section id="etoiles">
+  <div class="sec-head lire">
+    <div class="eyebrow">Les étoiles</div>
+    <h2>Vingt-six étoiles, <em>vingt-six</em> méridiens</h2>
+    <p class="res">Positions J2000 recalculées. Les lignes dorées portent une correspondance forte.</p>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Signe</th><th>Étoile</th><th>λ</th><th>Méridien</th><th>Ville ou lieu (écart)</th><th>Résonance</th></tr></thead>
+    <tbody id="tetoiles"></tbody>
+  </table></div>
+</section>
+
+<section id="calages">
+  <div class="sec-head lire">
+    <div class="eyebrow">Les calages comparés</div>
+    <h2>Et si l'on faisait <em>tourner</em> le ciel ?</h2>
+    <p class="res">La grille des étoiles a été tournée par pas de 0,01° contre 45 villes historiques. La barre compte les étoiles qui passent à moins de 1° d'une ville.</p>
+  </div>
+  <div class="calages" id="cals"></div>
+  <p class="legende" style="margin-top:18px">Spica – Paris reste la référence : c'est le seul calage fondé sur une étoile, et celui où les signes gardent leur sens. La phase A, qui met le Lion de Londres à Jérusalem, en est la meilleure alternative.</p>
+</section>
+
+<section id="limites">
+  <div class="sec-head lire">
+    <div class="eyebrow">Les limites</div>
+    <h2>Ce que la roue <em>ne prouve pas</em></h2>
+  </div>
+  <div class="limites">
+    <div class="lim"><div class="chiffre">1 sur 2</div><h3>Le hasard</h3><p>Un méridien tiré au hasard passe à moins de 0,25° d'une ville d'un million d'habitants une fois sur deux. Seules comptent les rencontres qui ont un sens.</p></div>
+    <div class="lim"><div class="chiffre">±90°</div><h3>La latitude</h3><p>Une étoile marque toute une ligne nord – sud. Spica passe par Paris, mais aussi par Barcelone, Niamey et Cotonou.</p></div>
+    <div class="lim"><div class="chiffre">±0,5°</div><h3>Les bornes</h3><p>Les limites UAI datent de 1930 et sont arrondies. Un écart inférieur au demi-degré reste dans la marge.</p></div>
+    <div class="lim"><div class="chiffre">a posteriori</div><h3>La lecture</h3><p>Les correspondances ont été repérées après la construction de la grille. Les fixer à l'avance donnerait une vraie valeur de preuve.</p></div>
+  </div>
+</section>
+
+<section id="documents">
+  <div class="sec-head lire">
+    <div class="eyebrow">Les documents</div>
+    <h2>Le dossier <em>complet</em></h2>
+  </div>
+  <div class="docs">
+    <a class="doc" href="/papers/zodiac/zodiac-synthese.pdf" download><div class="type">Télécharger · PDF · 8 pages</div><h3>Synthèse du calage Spica – Paris</h3><p>Le modèle, les 13 secteurs, les étoiles principales, les 18 étoiles secondaires vérifiées, les calages comparés et l'historique des versions.</p><p class="num" style="font-size:12px">Zodiaque géodésique — Synthèse.pdf</p></a>
+    <a class="doc" href="/papers/zodiac/zodiac-donnees.xlsx" download><div class="type">Télécharger · Excel</div><h3>Données vérifiées</h3><p>Copie du classeur fourni avec l’essai : paramètres, étoiles, secteurs, phases comparées et villes de référence.</p></a>
+    <a class="doc" href="https://docs.google.com/spreadsheets/d/1vBdAsOD8PZM_sxUdHRptpfXLK4QDdFH2_l2V6Kj_M5w/edit" target="_blank" rel="noopener"><div class="type">Google Sheets · 6 onglets</div><h3>Données vérifiées</h3><p>La phase φ se règle dans l'onglet Paramètres : méridiens et secteurs se recalculent.</p><ul><li>Paramètres</li><li>Étoiles principales et secondaires</li><li>Secteurs</li><li>Phases comparées</li><li>Villes de référence</li></ul></a>
+    <a class="doc" href="https://drive.google.com/drive/folders/1V9fiGlDHF97Pxnp-yRn6gENekDyQqbyl" target="_blank" rel="noopener"><div class="type">Google Drive</div><h3>Dossier Zodiac Geodesique</h3><p>Les roues en haute définition, les calculs de moindres carrés, la relecture des versions V2 et V3, et les anciennes versions dans « archives ».</p></a>
+  </div>
+</section>
+
+<aside class="related-links" aria-label="Autres essais de l’École Celtique"><h2>Poursuivre la lecture</h2><ul><li><a href="/index.html">Tous les essais de l’École Celtique</a></li><li><a href="/papers/le-quatrieme-sceau.html">Le quatrième sceau</a></li><li><a href="/papers/tel-dan-psalms-solomon.html">La stèle de Tel Dan et les Psaumes de Salomon</a></li><li><a href="/papers/author.html">À propos de Din d’Arya</a></li></ul></aside>
+</main>
+<footer class="wrap">
+  <p>Sources : catalogue PyEphem 4.2.1 et coordonnées J2000 publiées sur Wikipédia ; E. Delporte, <i>Délimitation scientifique des constellations</i>, UAI, 1930 ; base GeoNames pour les villes. Carte : Natural Earth via world-atlas. Projection azimutale équidistante polaire, coupée à 60° S.</p>
+  <p>Zodiaque géodésique à 13 signes · version de synthèse du 24 octobre 2026.</p>
+<p><a href="/index.html">← Accueil de l’École Celtique</a> · <a href="/papers/">Essais</a></p>
+</footer>
+
+<script src="/assets/zodiac/vendor/d3-7.8.5.min.js"></script>
+<script src="/assets/zodiac/vendor/topojson-3.0.2.min.js"></script>
+<script src="/assets/zodiac/zodiac.js"></script>
+
+</body>
+</html>
