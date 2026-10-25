@@ -35,7 +35,7 @@ Les études appliquent une **datation par contextualisation externe et convergen
 
 | Étude | Page |
 | --- | --- |
-| Zodiac — Le ciel posé sur la Terre : le zodiaque géodésique à 13 signes | [`papers/zodiac.html`](https://ecole-celtique.fr/papers/zodiac.html) |
+| Zodiac — Le ciel posé sur la Terre : le zodiaque géodésique à 13 signes | [`papers/zodiac/`](https://ecole-celtique.fr/papers/zodiac/) |
 
 Les treize constellations de l'écliptique, Ophiuchus compris, à leurs largeurs réelles, déroulées sur les méridiens du globe, avec Spica sur le méridien de Paris. Synthèse PDF et données dans [`papers/zodiac/`](papers/zodiac/).
 
@@ -49,8 +49,7 @@ Les treize constellations de l'écliptique, Ophiuchus compris, à leurs largeurs
 ```
 /                     page d'accueil, profils auteur (FR/EN), Évangile de Pierre, bibliographies
 ├── papers/           études publiées (HTML et PDF), images associées
-│   ├── zodiac.html   essai Zodiac (roue interactive)
-│   └── zodiac/       synthèse PDF et classeur de données du zodiaque
+│   └── zodiac/       essai Zodiac (index.html, roue interactive), synthèse PDF et classeur de données
 ├── assets/           scripts et ressources partagés
 │   └── zodiac/       thème, script et bibliothèques locales (D3, TopoJSON) de l'essai Zodiac
 ├── docs/             documentation technique (audit SEO…)

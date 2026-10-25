@@ -198,3 +198,20 @@ body{margin:0}
 .lire-aussi h3{font-size:clamp(22px,2.6vw,30px);margin:6px 0 6px}
 .lire-aussi p{color:var(--brume);margin:0}
 @media (max-width:700px){.lire-aussi{grid-template-columns:minmax(0,1fr)}.essai p,.essai li{font-size:17px}}
+/* ── Version racontée ── */
+.chapitre .recit{max-width:720px}
+.chapitre .recit p{font-size:19px;line-height:1.75;margin:0 0 18px}
+.chapitre .recit h2{margin:10px 0 24px}
+.chapitre .recit strong{color:var(--velin);font-weight:600}
+.chapitre .relance{font-family:var(--f-titre);font-style:italic;font-size:clamp(21px,2.4vw,26px)!important;line-height:1.45!important;color:var(--laiton)}
+.chapitre .relance strong{color:var(--laiton)}
+.chapitre .relance.final{color:var(--velin)}
+.chapitre .aide{font-size:14px!important;color:var(--brume)}
+.chapitre > .frise,.chapitre > .bande-box,.chapitre > .calages,.chapitre > .secteurs,.chapitre > .paires,.chapitre > .limites,.chapitre > .tbl{margin:30px 0 34px}
+.chapitre .vedette{align-items:start}
+@media (max-width:600px){.chapitre .recit p{font-size:17.5px}}
+/* ── Prologue ── */
+.prologue .recit{max-width:700px}
+.prologue .vers{font-family:var(--f-titre);font-style:italic;font-size:clamp(20px,2.2vw,24px)!important;line-height:1.6!important;color:var(--laiton);margin:28px 0!important}
+.prologue .vers::before{content:"✶";display:block;font-style:normal;font-size:14px;letter-spacing:.4em;opacity:.6;margin-bottom:10px}
+.prologue .vers:first-of-type::before{content:none}
