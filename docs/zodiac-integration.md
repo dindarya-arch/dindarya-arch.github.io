@@ -2,7 +2,7 @@
 
 Statut : contenu éditorial validé par l’utilisateur le 24 octobre 2026, avec autorisation de commit et de push. La publication dépend du processus de déploiement du dépôt.
 
-- Page : `/papers/zodiac.html`, nouvel essai « Zodiac — Le Ciel posé sur la Terre ».
+- Page : `/papers/zodiac/` (fichier `papers/zodiac/index.html` depuis le 25 octobre 2026 ; l'ancienne adresse `/papers/zodiac.html` redirige), nouvel essai « Zodiac — Le Ciel posé sur la Terre ».
 - Source : présentation HTML fournie dans le dossier Drive local `papers/zodiac`. Texte et données repris de cette présentation ; cette intégration ne constitue pas une vérification scientifique des affirmations.
 - Thème propre conservé : fond nocturne, accents laiton, roue polaire interactive.
 - Styles et scripts : `/assets/zodiac/`, dont bibliothèques D3 7.8.5 et TopoJSON 3.0.2 locales avec leurs licences. La carte est incluse dans le script ; aucune requête cartographique externe. Les polices Google restent facultatives, avec des polices de remplacement.

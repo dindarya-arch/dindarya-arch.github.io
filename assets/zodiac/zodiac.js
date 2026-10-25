@@ -142,7 +142,8 @@ PAIRES.forEach(p=>{const d=document.createElement("div");d.className="paire"+(p[
 const tb=document.getElementById("tetoiles");
 SYN.main.forEach(r=>{const tr=document.createElement("tr");if(/^Forte|ancrage/.test(r[7]))tr.className="fort";
   const res=r[7].replace(/^Coïncidence de métropole$/,"Métropole").replace(/^Aucune$/,"—").replace(", à la limite","");
-  tr.innerHTML=`<td>${r[0]}</td><td>${r[1]}</td><td class="num">${fr(r[2])}°</td><td class="num">${lonf(r[4])}</td><td>${r[5]}${r[6]&&r[6]!=="—"?` <span class="num res">(${r[6]}°)</span>`:""}</td><td class="res">${res}</td>`;tb.appendChild(tr)});
+  const sl=r[2]<29.09?r[2]+360:r[2],sc=S.find(s=>sl>=s.a&&sl<s.b),sg=sc&&sc.nom!==r[0]?`${r[0]}<br><span class="res" style="font-size:12px">secteur ${sc.nom}</span>`:r[0];
+  tr.innerHTML=`<td>${sg}</td><td>${r[1]}</td><td class="num">${fr(r[2])}°</td><td class="num">${lonf(r[4])}</td><td>${r[5]}${r[6]&&r[6]!=="—"?` <span class="num res">(${r[6]}°)</span>`:""}</td><td class="res">${res}</td>`;tb.appendChild(tr)});
 
 /* ---------- CALAGES ---------- */
 const cb=document.getElementById("cals");
