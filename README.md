@@ -37,7 +37,7 @@ Les études appliquent une **datation par contextualisation externe et convergen
 | --- | --- |
 | Zodiac — Le ciel posé sur la Terre : le zodiaque géodésique à 13 signes | [`papers/zodiac/`](https://ecole-celtique.fr/papers/zodiac/) |
 
-Les treize constellations de l'écliptique, Ophiuchus compris, à leurs largeurs réelles, déroulées sur les méridiens du globe, avec Spica sur le méridien de Paris. Synthèse PDF et données dans [`papers/zodiac/`](papers/zodiac/).
+Les treize constellations de l'écliptique, Ophiuchus compris, à leurs largeurs réelles, déroulées sur les méridiens du globe, calées sur la Terre par moindres carrés : Spica sur Ouessant. Synthèse PDF et données dans [`papers/zodiac/`](papers/zodiac/).
 
 ### En cours
 
