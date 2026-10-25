@@ -84,7 +84,7 @@
       "associatedMedia": [
         {
           "@type": "DataDownload",
-          "name": "Zodiaque géodésique — Synthèse (PDF, 8 pages)",
+          "name": "Zodiaque géodésique — Synthèse (PDF, 7 pages)",
           "contentUrl": "https://ecole-celtique.fr/papers/zodiac/zodiac-synthese.pdf",
           "encodingFormat": "application/pdf",
           "inLanguage": "fr"
@@ -125,14 +125,14 @@
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=20261025c">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://dindarya.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a><!-- ══ Cadre commun : /assets/head-frame.js ══ -->
 <div id="site-head" data-trail="Essais|/papers/;Zodiac"><a href="/index.html">← Din d'Arya — École Celtique</a></div>
-<script src="/assets/head-frame.js"></script>
+<script src="/assets/head-frame.js?v=20261025c"></script>
 
 <main class="wrap" id="contenu">
 
@@ -148,7 +148,7 @@
       <span class="k">sens inverse · J2000</span>
     </div>
     <div class="dl-row">
-      <a class="dl-btn" href="/papers/zodiac/zodiac-synthese.pdf" download>Télécharger la synthèse <small>PDF · 8 pages</small></a>
+      <a class="dl-btn" href="/papers/zodiac/zodiac-synthese.pdf" download>Télécharger la synthèse <small>PDF · 7 pages</small></a>
       <a class="dl-btn alt" href="/papers/zodiac/zodiac-donnees.xlsx" download>Télécharger le tableur <small>Excel · 6 onglets</small></a>
     </div>
   </div>
@@ -212,7 +212,7 @@
     <div class="etape"><div class="date">1929</div><div><h3>Johndro plaque le zodiaque sur les longitudes</h3><p>Douze signes égaux, 0° Bélier à Greenwich.</p></div></div>
     <div class="etape"><div class="date">1930</div><div><h3>Delporte trace les frontières du ciel</h3><p>Des constellations inégales, et Ophiuchus entre le Scorpion et le Sagittaire.</p></div></div>
     <div class="etape"><div class="date">1995</div><div><h3>Le treizième signe</h3><p>Walter Berg popularise le zodiaque à 13 signes.</p></div></div>
-    <div class="etape ici"><div class="date">2026</div><div><h3>Les deux cartes superposées</h3><p>Les largeurs réelles, un ancrage sur une étoile, un ciel lu en miroir.</p></div></div>
+    <div class="etape ici"><div class="date">2026</div><div><h3>Les deux cartes superposées</h3><p>Les largeurs réelles, un ciel lu en miroir, un angle trouvé par moindres carrés.</p></div></div>
   </div>
 </section>
 
@@ -225,12 +225,13 @@
   <div class="bande-box"><div class="bande" id="bande"></div></div>
   <p class="legende">Longitude écliptique J2000, de 29° (entrée du Bélier) à 389° (sortie des Poissons). Limites UAI. Le losange marque Spica.</p>
   <div class="recit">
-    <p>Et plutôt que d'ancrer la roue sur le point vernal — une abstraction qui glisse avec les siècles — le modèle la cale sur une étoile réelle : Spica, l'épi de blé de la Vierge, à 203,84° de longitude. Le ciel est ensuite lu en miroir, comme on le voit en levant la tête : les signes avancent vers l'ouest.</p>
-    <p>Reste le dernier voile : où la roue est-elle posée de toute éternité ? La grille des vingt-sept étoiles a été tournée par pas de 0,01° contre 45 villes historiques. Bien des calages donnent de beaux alignements — Spica sur Pagan remporte même le meilleur score. Mais une seule position se laisse reconnaître, celle qui tient à la fois sur une étoile, sur une logique et sur une terre.</p>
+    <p>Et plutôt que d'ancrer la roue sur le point vernal — une abstraction qui glisse avec les siècles —, le modèle ne pose rien d'avance. Le ciel est seulement lu en miroir, comme on le voit en levant la tête : les signes avancent vers l'ouest. Reste à savoir de combien il faut tourner la roue pour qu'elle trouve son assise sur la Terre.</p>
+    <p>Ce sont les couples qui répondent. D'un côté, les étoiles majeures du zodiaque, fixes entre elles ; de l'autre, les lieux de la Terre qui leur font écho, fixes entre eux : Aldebaran et le sanctuaire d'Ise, Regulus et la porte d'Ormuz, Vindemiatrix et Vienne, Denebola et Jérusalem, Antares et Rio… Vingt-cinq couples. Et un vingt-sixième, le plus ancien : <strong>le Sphinx de Gizeh</strong>, gardien à corps de lion, sur la porte où la Vierge passe au Lion.</p>
+    <p>Ajustés par la méthode des moindres carrés, ces vingt-six couples s'équilibrent en un seul angle : <strong>longitude terrestre = 206,18° − λ écliptique</strong>, à moins d'un centième de degré de la valeur retenue, 206,178°. L'écart quadratique moyen entre chaque étoile et son lieu reste d'un demi-degré.</p>
   </div>
   <div class="calages" id="cals"></div>
   <div class="recit">
-    <p class="relance"><strong>Spica est sur Paris.</strong> À 2,34° E de longitude, l'écart entre l'épi et la capitale est de 0,01°. La roue n'est pas posée : elle est retrouvée.</p>
+    <p class="relance">Alors seulement, on regarde où tombe l'épi de la Vierge. <strong>Spica est sur Paris.</strong> À 2,34° E de longitude, l'écart entre l'épi et la capitale est de 0,01°. La roue n'a pas été posée sur Paris : c'est Paris qui se trouve sous l'épi.</p>
   </div>
 </section>
 
@@ -253,7 +254,7 @@
     <div class="recit">
       <div class="eyebrow">Chapitre V</div>
       <h2>La terre <em>des lions</em></h2>
-      <p>On entre dans le Lion par une porte. Elle passe à 32,03° est, juste au-delà du delta du Nil : à 0,7° de Léontopolis, où Onias éleva son temple sous le sceau des deux triangles, à 0,9° des pyramides de Gizeh. Là où la Vierge passe au Lion s'ouvre la <strong>porte des étoiles</strong>.</p>
+      <p>On entre dans le Lion par une porte. Elle passe à 32,03° est, juste au-delà du delta du Nil : à 0,7° de Léontopolis, où Onias éleva son temple sous le sceau des deux triangles, à 0,9° des pyramides de Gizeh et du Sphinx, le gardien à corps de lion. Là où la Vierge passe au Lion s'ouvre la <strong>porte des étoiles</strong>.</p>
       <p>Le Lion couvre de 32° à 68° est. Sur ce seul secteur, la géographie aligne, comme des témoins convoqués au même procès : Thèbes, la cité de Sekhmet la lionne ; Jérusalem, le lion de Juda — et Denebola, la queue du Lion, passe à 0,66° de la ville ; Babylone, la ville des lions d'Ishtar, celle-là même où le zodiaque est né, que Zosma, le dos du Lion, veille à 0,44° ; la Perse, dont l'étendard porte le Lion et Soleil — et Regulus, le cœur du Lion, descend à 0,08° du détroit d'Ormuz, la porte maritime de l'empire.</p>
     </div>
     <div class="emblemes">
@@ -296,7 +297,7 @@
     <div class="lim"><div class="chiffre">0,01°</div><h3>L'épi sur le grenier</h3><p>Spica, l'épi de blé que tient la Vierge, se pose sur Paris, au cœur d'une terre de moissons. Le ciel offre son grain à la plaine qui le cultive.</p></div>
     <div class="lim"><div class="chiffre">3 sur 4</div><h3>Les étoiles royales</h3><p>Aldebaran le sanctuaire d'Ise, Regulus la porte d'Ormuz, Antares la baie de Rio.</p></div>
     <div class="lim"><div class="chiffre">36°</div><h3>La terre des lions</h3><p>Sekhmet, le lion de Juda, les lions d'Ishtar, le Lion et Soleil, sous un seul signe.</p></div>
-    <div class="lim"><div class="chiffre">0,7°</div><h3>La porte des étoiles</h3><p>Là où la Vierge passe au Lion : Léontopolis, le temple d'Onias et ses deux triangles, et à côté les pyramides de Gizeh.</p></div>
+    <div class="lim"><div class="chiffre">0,7°</div><h3>La porte des étoiles</h3><p>Là où la Vierge passe au Lion : Léontopolis, le temple d'Onias et ses deux triangles, et à côté les pyramides et le Sphinx de Gizeh.</p></div>
     <div class="lim"><div class="chiffre">0,03°</div><h3>Entre deux mondes</h3><p>Zavijava sur Istanbul, la ville posée sur deux continents.</p></div>
     <div class="lim"><div class="chiffre">0,13°</div><h3>La vendangeuse</h3><p>Vindemiatrix sur Vienne, capitale dont les vignes poussent jusque dans la ville.</p></div>
     <div class="lim"><div class="chiffre">180°</div><h3>Le nœud du temps</h3><p>Alrescha près de la ligne de changement de date, là où chaque jour naît et s'achève.</p></div>
@@ -338,7 +339,7 @@
 
 <script src="/papers/zodiac/d3-7.8.5.min.js"></script>
 <script src="/papers/zodiac/topojson-3.0.2.min.js"></script>
-<script src="/papers/zodiac/zodiac.js"></script>
+<script src="/papers/zodiac/zodiac.js?v=20261025c"></script>
 
 </body>
 </html>
