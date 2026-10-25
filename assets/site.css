@@ -1,6 +1,9 @@
-/* École Celtique — cadre commun v1.0 — 25 octobre 2026
-   Bandeau, navigation et pied de page partagés, injectés par /assets/head-frame.js.
-   Les couleurs se règlent par page avec les variables --ec-ink, --ec-muted et --ec-rule. */
+/* École Celtique — feuille de style unique v2.0 — 25 octobre 2026
+   1. Cadre commun (bandeau, navigation, pied de page), injecté par /assets/head-frame.js : toutes les pages.
+   2. Thème « nuit » (essai Zodiac et pages associées) : actif seulement avec <html class="nuit">.
+      Les sélecteurs sont enveloppés dans :where(html.nuit) pour ne pas modifier leur priorité. */
+
+/* ═══ 1. Cadre commun ═══ */
 :root{--ec-ink:#1b1b1b;--ec-muted:#5b5b5b;--ec-rule:rgba(0,0,0,.14);--ec-max:1180px}
 .ec-hero{position:relative;overflow:hidden;line-height:0}
 .ec-hero-bg{width:100%;height:220px;object-fit:cover;object-position:center top;display:block}
@@ -14,3 +17,209 @@
 .ec-footer{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;padding-top:18px;margin-top:18px;border-top:1px solid var(--ec-rule);font-family:Georgia,serif;font-size:14px;color:var(--ec-muted)}
 .ec-footer a{color:var(--ec-ink)}
 @media (max-width:600px){.ec-hero-bg{height:150px}.ec-hero-tagline{font-size:10pt}}
+
+/* ═══ 2. Thème nuit ═══ */
+/* Mise en page : un astrolabe éditorial. Hero = la roue qui se cale ; puis récit en colonne étroite, encarts de données en pleine largeur. Monde nocturne unique, choisi. */
+html.nuit{--nuit:#0a0f22;        /* fond, encre de nuit */
+  --nuit2:#111a36;       /* surfaces */
+  --laiton:#d4ad5e;      /* accent : laiton d'astrolabe */
+  --laiton2:#8f7240;     /* laiton terni, traits */
+  --velin:#ece6d6;       /* texte principal */
+  --brume:#9ba3bf;       /* texte secondaire */
+  --trait:rgba(236,230,214,.14);
+  --vert:#7fb5a6;        /* vert-de-gris, pour la Terre */
+  --f-titre:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --f-texte:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;
+  --f-chiffre:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;}
+:where(html.nuit) *{box-sizing:border-box}
+:where(html.nuit) body{background:var(--nuit);color:var(--velin);font-family:var(--f-texte);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px;
+  background-image:radial-gradient(1200px 700px at 70% -10%,rgba(212,173,94,.08),transparent 60%),radial-gradient(900px 600px at 0% 30%,rgba(127,181,166,.05),transparent 60%)}
+:where(html.nuit) a{color:var(--laiton)}
+:where(html.nuit) a:focus-visible,:where(html.nuit) button:focus-visible,:where(html.nuit) [tabindex]:focus-visible{outline:2px solid var(--laiton);outline-offset:3px}
+:where(html.nuit) .wrap{max-width:1180px;margin:0 auto}
+:where(html.nuit) .lire{max-width:680px}
+:where(html.nuit) .eyebrow{font-family:var(--f-chiffre);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--laiton)}
+:where(html.nuit) h1,:where(html.nuit) h2,:where(html.nuit) h3{font-family:var(--f-titre);font-weight:400;text-wrap:balance;margin:0}
+:where(html.nuit) h1{font-size:clamp(44px,7.4vw,96px);line-height:.98;letter-spacing:-.01em}
+:where(html.nuit) h1 em{font-style:italic;color:var(--laiton)}
+:where(html.nuit) h2{font-size:clamp(32px,4.4vw,52px);line-height:1.05}
+:where(html.nuit) h2 em{font-style:italic;color:var(--laiton)}
+:where(html.nuit) h3{font-size:24px;line-height:1.15}
+:where(html.nuit) p{margin:0 0 14px}
+:where(html.nuit) .num{font-family:var(--f-chiffre);font-variant-numeric:tabular-nums}
+:where(html.nuit) section{padding-block:72px;border-top:1px solid var(--trait)}
+:where(html.nuit) .sec-head{display:grid;gap:14px;margin-bottom:34px}
+/* HERO */
+:where(html.nuit) .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:40px;align-items:center;padding-block:56px 40px}
+@media (max-width:920px){:where(html.nuit) .hero{grid-template-columns:minmax(0,1fr)}}
+:where(html.nuit) .hero .lede{font-size:20px;color:var(--brume);max-width:34ch;margin-top:22px}
+:where(html.nuit) .hero .lede b{color:var(--velin);font-weight:500}
+:where(html.nuit) .formule{margin-top:28px;display:inline-flex;flex-wrap:wrap;gap:10px 18px;align-items:baseline;border:1px solid var(--laiton2);padding:14px 18px;border-radius:2px}
+:where(html.nuit) .formule .num{font-size:15px}
+:where(html.nuit) .formule .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--brume);font-family:var(--f-chiffre)}
+:where(html.nuit) .roue{position:relative;min-width:0}
+:where(html.nuit) .roue svg{width:100%;height:auto;display:block}
+:where(html.nuit) .statut{font-family:var(--f-chiffre);font-size:12px;color:var(--brume);text-align:center;margin-top:6px;min-height:1.6em}
+:where(html.nuit) .statut b{color:var(--laiton);font-weight:500}
+:where(html.nuit) .info{position:absolute;right:0;bottom:8%;width:min(260px,46%);background:rgba(17,26,54,.92);border:1px solid var(--laiton2);padding:12px 14px;font-size:14px;line-height:1.45;pointer-events:none}
+:where(html.nuit) .info h4{margin:0 0 4px;font-family:var(--f-titre);font-weight:400;font-size:22px;color:var(--laiton)}
+:where(html.nuit) .info .num{font-size:12px;color:var(--brume)}
+@media (max-width:600px){:where(html.nuit) .info{position:static;width:auto;margin-top:8px}}
+:where(html.nuit) .sector{cursor:pointer}
+:where(html.nuit) .dim .sector:not(.on) .ring{opacity:.35}
+:where(html.nuit) .dim .landc:not(.on){opacity:.35}
+:where(html.nuit) #zod{transform-origin:500px 500px}
+@media (prefers-reduced-motion:no-preference){:where(html.nuit) #zod.anim{animation:cale 3.2s cubic-bezier(.2,.7,.1,1) both}:where(html.nuit) .landc{transition:fill-opacity 1.2s ease}}
+@keyframes cale{from{transform:rotate(-74deg)}to{transform:rotate(0)}}
+/* FRISE */
+:where(html.nuit) .frise{display:grid;gap:0;position:relative;margin-top:8px}
+:where(html.nuit) .frise::before{content:"";position:absolute;left:118px;top:6px;bottom:6px;width:1px;background:var(--laiton2)}
+:where(html.nuit) .etape{display:grid;grid-template-columns:100px 1fr;gap:36px;padding:14px 0;position:relative}
+:where(html.nuit) .etape::before{content:"";position:absolute;left:113px;top:24px;width:11px;height:11px;border-radius:50%;background:var(--nuit);border:1px solid var(--laiton)}
+:where(html.nuit) .etape.ici::before{background:var(--laiton)}
+:where(html.nuit) .etape .date{font-family:var(--f-chiffre);font-size:13px;color:var(--laiton);text-align:right;padding-top:5px}
+:where(html.nuit) .etape h3{font-size:22px;margin-bottom:4px}
+:where(html.nuit) .etape p{color:var(--brume);margin:0;max-width:62ch}
+@media (max-width:600px){:where(html.nuit) .frise::before{left:6px}:where(html.nuit) .etape{grid-template-columns:1fr;gap:4px;padding-left:28px}:where(html.nuit) .etape::before{left:1px}:where(html.nuit) .etape .date{text-align:left}}
+/* BANDE ÉCLIPTIQUE */
+:where(html.nuit) .bande-box{overflow-x:auto;padding-bottom:6px}
+:where(html.nuit) .bande{min-width:760px}
+:where(html.nuit) .bande svg{width:100%;height:auto;display:block}
+:where(html.nuit) .legende{font-size:14px;color:var(--brume);margin-top:10px}
+/* SECTEURS */
+:where(html.nuit) .secteurs{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+:where(html.nuit) .secteur{background:var(--nuit);border:1px solid var(--trait);padding:18px 18px 20px;display:grid;gap:6px;align-content:start;cursor:pointer;transition:background .2s}
+:where(html.nuit) .secteur:hover,:where(html.nuit) .secteur.on{background:var(--nuit2)}
+:where(html.nuit) .secteur .tete{display:flex;align-items:baseline;gap:10px}
+:where(html.nuit) .secteur .gl{font-size:24px;line-height:1;width:28px;font-family:"Segoe UI Symbol","Noto Sans Symbols 2","DejaVu Sans",sans-serif}
+:where(html.nuit) .secteur h3{font-size:22px}
+:where(html.nuit) .secteur .num{font-size:12px;color:var(--brume)}
+:where(html.nuit) .secteur p{font-size:14.5px;color:var(--velin);opacity:.85;margin:0}
+:where(html.nuit) .secteur .larg{margin-left:auto;font-family:var(--f-chiffre);font-size:12px;color:var(--laiton)}
+/* CORRESPONDANCES */
+:where(html.nuit) .vedette{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center;margin-bottom:46px}
+@media (max-width:860px){:where(html.nuit) .vedette{grid-template-columns:minmax(0,1fr)}}
+:where(html.nuit) .vedette .grand{font-family:var(--f-titre);font-size:clamp(28px,3.6vw,42px);line-height:1.12}
+:where(html.nuit) .vedette .grand em{color:var(--laiton)}
+:where(html.nuit) .emblemes{display:grid;gap:10px}
+:where(html.nuit) .emb{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--trait)}
+:where(html.nuit) .emb b{font-family:var(--f-chiffre);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--laiton);padding-top:3px}
+:where(html.nuit) .emb span{color:var(--brume)}
+:where(html.nuit) .paires{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+:where(html.nuit) .paire{border-top:2px solid var(--laiton);padding-top:14px;display:grid;gap:6px;align-content:start}
+:where(html.nuit) .paire.moy{border-top-color:var(--laiton2)}
+:where(html.nuit) .paire .etoile{font-family:var(--f-titre);font-size:26px;line-height:1.05}
+:where(html.nuit) .paire .lieu{font-size:18px}
+:where(html.nuit) .paire .lieu::before{content:"→ ";color:var(--laiton)}
+:where(html.nuit) .paire .delta{font-family:var(--f-chiffre);font-size:28px;color:var(--laiton);line-height:1}
+:where(html.nuit) .paire .delta small{font-size:12px;color:var(--brume);margin-left:6px}
+:where(html.nuit) .paire p{font-size:14.5px;color:var(--brume);margin:0}
+:where(html.nuit) .paire .tag{font-family:var(--f-chiffre);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brume)}
+/* TABLES */
+:where(html.nuit) .tbl{overflow-x:auto;border:1px solid var(--trait)}
+:where(html.nuit) table{border-collapse:collapse;width:100%;min-width:720px;font-size:14.5px}
+:where(html.nuit) th{font-family:var(--f-chiffre);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brume);text-align:left;padding:10px 12px;border-bottom:1px solid var(--laiton2);position:sticky;top:0;background:var(--nuit)}
+:where(html.nuit) td{padding:9px 12px;border-bottom:1px solid var(--trait);vertical-align:top}
+:where(html.nuit) td.num{white-space:nowrap;font-size:13px}
+:where(html.nuit) tr.fort td{background:rgba(212,173,94,.07)}
+:where(html.nuit) tr.fort td:nth-child(2){color:var(--laiton)}
+:where(html.nuit) .res{color:var(--brume)}
+/* CALAGES */
+:where(html.nuit) .calages{display:grid;gap:14px}
+:where(html.nuit) .cal{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 72px;gap:16px;align-items:center}
+:where(html.nuit) .cal .nom{font-size:15px}
+:where(html.nuit) .cal .nom small{display:block;font-family:var(--f-chiffre);font-size:11.5px;color:var(--brume)}
+:where(html.nuit) .cal .barre{height:10px;background:var(--trait);position:relative}
+:where(html.nuit) .cal .barre i{position:absolute;inset:0 auto 0 0;background:var(--laiton2)}
+:where(html.nuit) .cal.ref .barre i{background:var(--laiton)}
+:where(html.nuit) .cal .v{font-family:var(--f-chiffre);font-size:13px;text-align:right}
+@media (max-width:600px){:where(html.nuit) .cal{grid-template-columns:minmax(0,1fr) 60px}:where(html.nuit) .cal .barre{grid-column:1/-1;grid-row:2}}
+/* LIMITES */
+:where(html.nuit) .limites{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
+:where(html.nuit) .lim h3{font-size:21px;margin-bottom:6px}
+:where(html.nuit) .lim p{color:var(--brume);font-size:15.5px;margin:0}
+:where(html.nuit) .lim .chiffre{font-family:var(--f-chiffre);color:var(--laiton);font-size:30px;line-height:1.1;margin-bottom:6px}
+/* DOCUMENTS */
+:where(html.nuit) .docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+:where(html.nuit) .doc{border:1px solid var(--laiton2);padding:20px;display:grid;gap:8px;align-content:start;text-decoration:none;color:var(--velin);transition:background .2s,border-color .2s}
+:where(html.nuit) a.doc:hover{background:var(--nuit2);border-color:var(--laiton)}
+:where(html.nuit) .doc .type{font-family:var(--f-chiffre);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--laiton)}
+:where(html.nuit) .doc h3{font-size:24px}
+:where(html.nuit) .doc p{color:var(--brume);font-size:15px;margin:0}
+:where(html.nuit) .doc ul{margin:4px 0 0;padding-left:18px;color:var(--brume);font-size:14.5px}
+:where(html.nuit) footer{padding-top:40px;border-top:1px solid var(--trait);color:var(--brume);font-size:14px}
+:where(html.nuit) footer p{max-width:90ch}
+:where(html.nuit) .site-nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;max-width:1180px;margin:0 auto;padding:20px 0;border-bottom:1px solid var(--trait)}
+:where(html.nuit) .site-nav img{width:36px;height:auto;vertical-align:middle;margin-right:10px}
+:where(html.nuit) .site-nav a{font-size:15px}
+:where(html.nuit) .site-nav .brand{margin-right:auto;text-decoration:none}
+:where(html.nuit) .skip-link{position:absolute;left:16px;top:-100px;background:var(--nuit2);padding:12px;z-index:10}
+:where(html.nuit) .skip-link:focus{top:10px}
+:where(html.nuit) .essay-title{display:block;font-size:.42em;line-height:1.2;margin-top:14px}
+:where(html.nuit) .essay-meta{font-size:14px;color:var(--brume);margin-top:20px}
+:where(html.nuit) .essay-toc{display:flex;flex-wrap:wrap;gap:10px 20px;padding:20px 0;border-top:1px solid var(--trait)}
+:where(html.nuit) .related-links{padding:28px 0}
+:where(html.nuit) .related-links h2{font-size:28px;margin-bottom:18px}
+:where(html.nuit) .related-links ul{padding-left:20px}
+@media (max-width:600px){:where(html.nuit) .hero{gap:20px}:where(html.nuit) .wrap{min-width:0}:where(html.nuit) .hero h1{font-size:44px}:where(html.nuit) .secteurs,:where(html.nuit) .paires,:where(html.nuit) .docs{grid-template-columns:minmax(0,1fr)}}
+:where(html.nuit) body{margin:0}
+/* ── Cadre commun : styles dans /assets/site.css ; couleurs et bandeau pleine largeur pour le thème nocturne ── */
+html.nuit{--ec-ink:var(--velin);--ec-muted:var(--brume);--ec-rule:var(--trait)}
+:where(html.nuit) .ec-hero{margin-left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1 * max(16px,env(safe-area-inset-right,0px)))}
+/* ── Boutons de téléchargement ── */
+:where(html.nuit) .dl-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+:where(html.nuit) .dl-btn{display:inline-flex;flex-direction:column;gap:2px;padding:12px 20px;background:var(--laiton);color:var(--nuit);text-decoration:none;font-family:var(--f-texte);font-weight:700;font-size:16px;border:1px solid var(--laiton);transition:background .2s,color .2s}
+:where(html.nuit) .dl-btn small{font-family:var(--f-chiffre);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.8}
+:where(html.nuit) .dl-btn:hover{background:transparent;color:var(--laiton)}
+:where(html.nuit) .dl-btn.alt{background:transparent;color:var(--laiton)}
+:where(html.nuit) .dl-btn.alt:hover{background:var(--laiton);color:var(--nuit)}
+@media (max-width:600px){:where(html.nuit) .dl-btn{width:100%}}
+/* ── Essai long (Le Ciel et la Terre) ── */
+:where(html.nuit) .essai{max-width:760px;margin:0 auto;padding-block:48px 24px}
+:where(html.nuit) .essai-tete{display:grid;gap:12px;padding-bottom:28px;border-bottom:1px solid var(--trait);margin-bottom:36px}
+:where(html.nuit) .essai-tete h1{font-size:clamp(44px,7vw,84px)}
+:where(html.nuit) .essai-sous-titre{font-family:var(--f-titre);font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.3;color:var(--velin);margin:0}
+:where(html.nuit) .essai-meta{font-family:var(--f-chiffre);font-size:12.5px;letter-spacing:.06em;color:var(--brume);margin:0}
+:where(html.nuit) .essai section{margin-bottom:44px;padding-block:0;border-top:0}
+:where(html.nuit) .essai h2{font-size:clamp(26px,3vw,36px);line-height:1.15;margin:6px 0 16px}
+:where(html.nuit) .essai p,:where(html.nuit) .essai li{font-size:18px;line-height:1.7}
+:where(html.nuit) .essai p{margin:0 0 16px}
+:where(html.nuit) .essai ul{padding-left:20px;margin:0 0 16px;display:grid;gap:12px}
+:where(html.nuit) .essai strong{color:var(--velin);font-weight:600}
+:where(html.nuit) .essai a{color:var(--laiton)}
+:where(html.nuit) .adage{margin:26px 0;padding:18px 0 18px 26px;border-left:2px solid var(--laiton);font-family:var(--f-titre);font-style:italic;font-size:clamp(24px,3vw,32px);line-height:1.3;color:var(--laiton)}
+:where(html.nuit) .essai-figure{margin:30px 0 0}
+:where(html.nuit) .essai-figure img{width:100%;height:auto;display:block;border:1px solid var(--trait)}
+:where(html.nuit) .essai-figure figcaption{font-size:14px;color:var(--brume);margin-top:10px}
+:where(html.nuit) .essai-formule{margin:6px 0 22px}
+:where(html.nuit) .essai-final{font-size:20px!important;border-top:1px solid var(--trait);padding-top:18px}
+:where(html.nuit) .essai-retour{margin-top:40px;padding:26px;border:1px solid var(--laiton2);display:grid;gap:10px;justify-items:start}
+:where(html.nuit) .essai-retour h2{font-size:clamp(24px,3vw,32px);margin:0}
+:where(html.nuit) .essai-retour p{color:var(--brume);margin:0}
+:where(html.nuit) .lire-aussi{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;padding:26px;border:1px solid var(--laiton2)}
+:where(html.nuit) .lire-aussi h3{font-size:clamp(22px,2.6vw,30px);margin:6px 0 6px}
+:where(html.nuit) .lire-aussi p{color:var(--brume);margin:0}
+@media (max-width:700px){:where(html.nuit) .lire-aussi{grid-template-columns:minmax(0,1fr)}:where(html.nuit) .essai p,:where(html.nuit) .essai li{font-size:17px}}
+/* ── Version racontée ── */
+:where(html.nuit) .chapitre .recit{max-width:720px}
+:where(html.nuit) .chapitre .recit p{font-size:19px;line-height:1.75;margin:0 0 18px}
+:where(html.nuit) .chapitre .recit h2{margin:10px 0 24px}
+:where(html.nuit) .chapitre .recit strong{color:var(--velin);font-weight:600}
+:where(html.nuit) .chapitre .relance{font-family:var(--f-titre);font-style:italic;font-size:clamp(21px,2.4vw,26px)!important;line-height:1.45!important;color:var(--laiton)}
+:where(html.nuit) .chapitre .relance strong{color:var(--laiton)}
+:where(html.nuit) .chapitre .relance.final{color:var(--velin)}
+:where(html.nuit) .chapitre .aide{font-size:14px!important;color:var(--brume)}
+:where(html.nuit) .chapitre > .frise,:where(html.nuit) .chapitre > .bande-box,:where(html.nuit) .chapitre > .calages,:where(html.nuit) .chapitre > .secteurs,:where(html.nuit) .chapitre > .paires,:where(html.nuit) .chapitre > .limites,:where(html.nuit) .chapitre > .tbl{margin:30px 0 34px}
+:where(html.nuit) .chapitre .vedette{align-items:start}
+@media (max-width:600px){:where(html.nuit) .chapitre .recit p{font-size:17.5px}}
+/* ── Prologue ── */
+:where(html.nuit) .prologue .recit{max-width:700px}
+:where(html.nuit) .prologue .vers{font-family:var(--f-titre);font-style:italic;font-size:clamp(20px,2.2vw,24px)!important;line-height:1.6!important;color:var(--laiton);margin:28px 0!important}
+:where(html.nuit) .prologue .vers::before{content:"✶";display:block;font-style:normal;font-size:14px;letter-spacing:.4em;opacity:.6;margin-bottom:10px}
+:where(html.nuit) .prologue .vers:first-of-type::before{content:none}
+/* ── Texte justifié (prose longue) ; cartes courtes et listes de lieux alignées à gauche ── */
+:where(html.nuit) .chapitre .recit p,:where(html.nuit) .essai p,:where(html.nuit) .essai li,:where(html.nuit) .hero .lede,:where(html.nuit) .legende,:where(html.nuit) footer.wrap > p,:where(html.nuit) .info{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:7 3 3;text-wrap:pretty}
+:where(html.nuit) .chapitre .recit p.vers,:where(html.nuit) .chapitre .recit p.aide{text-align:left;hyphens:manual}
+:where(html.nuit) .lim p,:where(html.nuit) .etape p,:where(html.nuit) .doc p,:where(html.nuit) .secteur p{text-align:left;-webkit-hyphens:auto;hyphens:auto;text-wrap:pretty}

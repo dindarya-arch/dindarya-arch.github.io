@@ -208,5 +208,7 @@ body{margin:0}
 .prologue .vers::before{content:"✶";display:block;font-style:normal;font-size:14px;letter-spacing:.4em;opacity:.6;margin-bottom:10px}
 .prologue .vers:first-of-type::before{content:none}
 /* ── Texte justifié ── */
-.chapitre .recit p,.essai p,.lim p{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
-.chapitre .recit p.vers,.chapitre .recit p.relance,.chapitre .recit p.aide{text-align:left;hyphens:manual}
+.chapitre .recit p,.essai p,.essai li,.lim p,.hero .lede,.legende,.etape p,.doc p,footer.wrap > p,.info{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:7 3 3;text-wrap:pretty}
+.chapitre .recit p.relance{text-align:justify}
+.chapitre .recit p.vers,.chapitre .recit p.aide{text-align:left;hyphens:manual}
+@media (max-width:420px){.etape p,.doc p,.lim p{text-align:left;hyphens:auto}}
