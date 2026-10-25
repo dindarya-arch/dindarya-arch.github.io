@@ -215,3 +215,6 @@ body{margin:0}
 .prologue .vers{font-family:var(--f-titre);font-style:italic;font-size:clamp(20px,2.2vw,24px)!important;line-height:1.6!important;color:var(--laiton);margin:28px 0!important}
 .prologue .vers::before{content:"✶";display:block;font-style:normal;font-size:14px;letter-spacing:.4em;opacity:.6;margin-bottom:10px}
 .prologue .vers:first-of-type::before{content:none}
+/* ── Texte justifié ── */
+.chapitre .recit p,.essai p,.lim p{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.chapitre .recit p.vers,.chapitre .recit p.relance,.chapitre .recit p.aide{text-align:left;hyphens:manual}
