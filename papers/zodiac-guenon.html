@@ -60,25 +60,16 @@
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/zodiac/zodiac.css">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://dindarya.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-<!-- ══ BANDEAU HERO (cadre commun) ══ -->
-<div class="ec-hero">
-  <img class="ec-hero-bg" src="/bandeau.jpg" alt="Jérusalem — Proche-Orient ancien">
-  <div class="ec-hero-overlay">
-    <p class="ec-hero-tagline">Pour un regard antérieur celtique sur l'histoire de l'Orient</p>
-  </div>
-</div>
-
-<nav class="ec-nav" aria-label="Navigation principale">
-  <a class="nav-back" href="/index.html"><img class="nav-logo" src="/Logo.jpg" alt="École Celtique">← Din d'Arya — École Celtique</a>
-  <span class="nav-label"><a href="/papers/zodiac/">Zodiac</a> · Le Ciel et la Terre</span>
-</nav>
+<!-- ══ Cadre commun : /assets/head-frame.js ══ -->
+<div id="site-head" data-trail="Essais|/papers/;Zodiac|/papers/zodiac/;Le Ciel et la Terre"><a href="/index.html">← Din d'Arya — École Celtique</a></div>
+<script src="/assets/head-frame.js"></script>
 
 <main class="wrap" id="contenu">
 <article class="essai">
@@ -157,17 +148,7 @@
 </main>
 
 <footer class="wrap">
-  <div class="ec-footer">
-    <span>Din d'Arya · École Celtique · 2026</span>
-    <span>
-      <a href="https://orcid.org/0009-0004-9915-5893" target="_blank" rel="noopener">ORCID 0009-0004-9915-5893</a> ·
-      <a href="https://hal.science/hal-05610636" target="_blank" rel="noopener">HAL</a> ·
-      <a href="https://hcommons.org/members/dindarya/" target="_blank" rel="noopener">H-Commons</a> ·
-      <a href="/papers/zodiac/">Zodiac</a> ·
-      <a href="/papers/">Essais</a> ·
-      <a href="/index.html">← Accueil</a>
-    </span>
-  </div>
+  <div id="site-foot" data-links="Zodiac|/papers/zodiac/"></div>
 </footer>
 </body>
 </html>
