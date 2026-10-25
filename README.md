@@ -49,9 +49,9 @@ Les treize constellations de l'écliptique, Ophiuchus compris, à leurs largeurs
 ```
 /                     page d'accueil, profils auteur (FR/EN), Évangile de Pierre, bibliographies
 ├── papers/           études publiées (HTML et PDF), images associées
-│   └── zodiac/       essai Zodiac (index.html, roue interactive), synthèse PDF et classeur de données
-├── assets/           scripts et ressources partagés
-│   └── zodiac/       thème, script et bibliothèques locales (D3, TopoJSON) de l'essai Zodiac
+│   └── zodiac/       essai Zodiac : index.html, zodiac.js (roue), D3, TopoJSON, image de partage, synthèse PDF, classeur
+├── assets/           ressources communes à tout le site : site.css (feuille de style unique),
+│                     head-frame.js (cadre commun), nav-seo.js
 ├── docs/             documentation technique (audit SEO…)
 ├── CNAME             domaine ecole-celtique.fr
 ├── sitemap.xml       plan du site pour les moteurs de recherche
