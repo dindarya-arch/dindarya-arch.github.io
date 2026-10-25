@@ -1,0 +1,16 @@
+/* École Celtique — cadre commun v1.0 — 25 octobre 2026
+   Bandeau, navigation et pied de page partagés, injectés par /assets/head-frame.js.
+   Les couleurs se règlent par page avec les variables --ec-ink, --ec-muted et --ec-rule. */
+:root{--ec-ink:#1b1b1b;--ec-muted:#5b5b5b;--ec-rule:rgba(0,0,0,.14);--ec-max:1180px}
+.ec-hero{position:relative;overflow:hidden;line-height:0}
+.ec-hero-bg{width:100%;height:220px;object-fit:cover;object-position:center top;display:block}
+.ec-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,15,34,.10) 0%,rgba(10,15,34,.65) 100%);display:flex;align-items:flex-end;justify-content:center;padding:0 1.5rem 1.2rem}
+.ec-hero-tagline{font-family:Georgia,"Times New Roman",serif;font-size:14pt;font-style:italic;color:#fff;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,.75);letter-spacing:.02em;line-height:1.4;margin:0}
+.ec-nav{max-width:var(--ec-max);margin:0 auto;padding:18px 0;border-bottom:1px solid var(--ec-rule);display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
+.ec-nav .nav-back{font-family:Georgia,serif;font-size:15px;color:var(--ec-ink);display:flex;align-items:center;gap:.6rem}
+.ec-nav .nav-logo{width:36px;height:auto}
+.ec-nav .nav-label{font-family:Georgia,serif;font-size:14px;font-style:italic;color:var(--ec-muted)}
+.ec-nav .nav-label a{color:inherit}
+.ec-footer{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;padding-top:18px;margin-top:18px;border-top:1px solid var(--ec-rule);font-family:Georgia,serif;font-size:14px;color:var(--ec-muted)}
+.ec-footer a{color:var(--ec-ink)}
+@media (max-width:600px){.ec-hero-bg{height:150px}.ec-hero-tagline{font-size:10pt}}
