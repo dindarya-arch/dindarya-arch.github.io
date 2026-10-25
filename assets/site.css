@@ -223,3 +223,6 @@ html.nuit{--ec-ink:var(--velin);--ec-muted:var(--brume);--ec-rule:var(--trait)}
 :where(html.nuit) .chapitre .recit p,:where(html.nuit) .essai p,:where(html.nuit) .essai li,:where(html.nuit) .hero .lede,:where(html.nuit) .legende,:where(html.nuit) footer.wrap > p,:where(html.nuit) .info{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:7 3 3;text-wrap:pretty}
 :where(html.nuit) .chapitre .recit p.vers,:where(html.nuit) .chapitre .recit p.aide{text-align:left;hyphens:manual}
 :where(html.nuit) .lim p,:where(html.nuit) .etape p,:where(html.nuit) .doc p,:where(html.nuit) .secteur p{text-align:left;-webkit-hyphens:auto;hyphens:auto;text-wrap:pretty}
+/* ── La Vierge, l'épi (chapitre III) ── */
+:where(html.nuit) .vierge-epi{margin-top:44px;padding-top:36px;border-top:1px solid var(--trait)}
+:where(html.nuit) .vierge-epi h3{font-size:clamp(26px,3.2vw,36px);line-height:1.15;margin:0 0 22px;color:var(--velin)}
