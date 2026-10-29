@@ -22,7 +22,7 @@
     head.innerHTML =
       '<div class="ec-hero">' +
         '<img class="ec-hero-bg" src="/bandeau.jpg" alt="Jérusalem — Proche-Orient ancien" width="1600" height="400">' +
-        '<div class="ec-hero-overlay"><p class="ec-hero-tagline">Pour un regard antérieur celtique sur l\'histoire de l\'Orient</p></div>' +
+        '<div class="ec-hero-overlay"><p class="ec-hero-tagline">« Que celui qui cherche ne cesse de chercher jusqu’à ce qu’il trouve. Et lorsqu’il aura trouvé, il s’émerveillera ; et s’étant émerveillé, il régnera ; et ayant régné, il se reposera. »<span class="ec-hero-attribution" style="display:block;margin-top:.45rem">— Jacques le Juste, dit Didyme Thomas (–13 EC, 62 EC)</span></p></div>' +
       '</div>' +
       '<nav class="ec-nav" aria-label="Navigation principale">' +
         '<a class="nav-back" href="/index.html"><img class="nav-logo" src="/Logo.jpg" alt="École Celtique" width="36" height="36">← Din d\'Arya — École Celtique</a>' +
