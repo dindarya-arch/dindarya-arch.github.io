@@ -226,3 +226,15 @@ html.nuit{--ec-ink:var(--velin);--ec-muted:var(--brume);--ec-rule:var(--trait)}
 /* ── La Vierge, l'épi (chapitre III) ── */
 :where(html.nuit) .vierge-epi{margin-top:44px;padding-top:36px;border-top:1px solid var(--trait)}
 :where(html.nuit) .vierge-epi h3{font-size:clamp(26px,3.2vw,36px);line-height:1.15;margin:0 0 22px;color:var(--velin)}
+
+/* Citation longue du logion 2 : bandeau commun, affichage adaptatif. */
+.ec-hero-overlay{align-items:center;padding:1.2rem clamp(1rem,4vw,3rem)}
+.ec-hero-tagline{max-width:1000px;font-size:clamp(13px,1.65vw,19px);line-height:1.45;overflow-wrap:break-word}
+.ec-hero-attribution{font-size:.83em;line-height:1.4}
+@media (max-width:600px){
+  .ec-hero-bg{height:300px}
+  .ec-hero-overlay{padding:1rem 1.1rem;align-items:center}
+  .ec-hero-tagline{font-size:clamp(13px,3.8vw,15px);line-height:1.5}
+}
+@media (max-width:350px){.ec-hero-bg{height:325px}}
+@media (max-width:350px){.ec-nav{padding-inline:10px}.ec-nav .nav-back{font-size:13px;min-width:0;overflow-wrap:anywhere}}
